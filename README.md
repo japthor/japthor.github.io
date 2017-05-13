@@ -1,3 +1,0 @@
-# japthor.github.io
-
-Portfolio!
