@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio - Javier Pastor Serrano</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="Images/Photo.png" style="width:45%;" class="w3-round"><br><br>
+    <h4 ><b>Javier Pastor Serrano</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://github.com/japthor" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UChlLYwZSMWTDmIkhA7UzjCA" target="_blank"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
+	<a href="https://www.linkedin.com/in/javier-pastor-serrano-913825128/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Game Programmer</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://www.youtube.com/watch?v=M3cR4uq4q6I" target="_blank"><img src="Images/Fearless.jpg" alt="Fearless: A Brand New Tale" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p align="center"><b>Fearless: A Brand New Tale</b></p>
+        <p align="justify">A third-person platform game made by four programmers and four artists, all students from the 
+		last year in ESAT. <br><br>I was in charge of programming the UI, some mechanics such as climbing 
+		or simulating using a parachute, integrating animations with their state machine, saving the game, 
+		the pickups and incorporating music and fx sounds. <br><br><br><br><br>Category: Student Project.<br>Engine: Unreal Engine 4.<br>
+		Language: C++ and Blueprints.<br></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://www.youtube.com/watch?v=iun6B5BGqV0" target="_blank"><img src="Images/MusicAsGamePlay.png" alt="Music as GamePlay" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p align="center"><b>Music as Gameplay</b></p>
+        <p align="justify">A game where the music is the protagonist. The objective of the player is to avoid certain elements of the scene that are 
+		totally manipulated by some information that a simple background music can provide us such as, for example, frequency. 
+		<br><br>Some audio processing techniques including Fast Fourier Transform has been used.<br><br><br><br><br><br>
+		Category: Student Project.<br> Engine: Unity.<br>Language: C#.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="https://www.youtube.com/watch?v=M00pYZX3Ufc" target="_blank"><img src="Images/PassmenCity.png" alt="Passmen City" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p align="center"><b>Passmen City</b></p>
+        <p align="justify">A simulator game made by four programmers where you can see the interaction between various types of agents, 
+		such as pedestrians or cars, in a procedurally generated city. <br><br> The project is composed of the following elements: Procedural city generation, 
+		Decision trees for agents (FSM), Crowd/Flocking system (pedestrians), Real-time pathfinding (cars and pedestrians) and Neural Networks (pedestrian learning).
+		<br><br><br>Category: Student Project.<br>Engine: Unity.<br>Language: C#.<br></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+    <h4><b>About Me</b></h4>
+    <p align="justify">Hello, my name is Javier Pastor Serrano, and I am a passionate game programmer who has recently graduated as a video game programmer at Teesside University (UK) 
+	and one year before at ESAT (Spain). My principal interest is the field of creating gameplay. However, I also like the areas of AI and others more uncommon 
+	such as musical programming aspects. <br><br> As every person who studies or work in the field of video games, I like to play video games in my free time to relax. 
+	But I also like to work on other projects to refresh and investigate new areas.</p>
+	<h4><b>Technical Skills</b></h4>
+    <p align="justify">
+	<b>Languages:</b> C, C++, C#, Objective-C and Python.<br>
+	<b>Engines:</b> Unity and Unreal Engine 4.<br>
+	<b>APIs:</b> SFML, Box2D and SQLite.<br>
+	</p>
+	<h4><b>Other projects</b></h4>
+    <p align="justify">You can see more projects made by me or with other people inside my Youtube channel or on LinkedIn. Also, you can observe the code of some of the projects and download 
+	them by entering in my GitHub account. <br><br>All the links to their respect page on the left side.</p>
+	<h4><b>Resume</b></h4>
+    <p>
+      <a href="Documents/CV.pdf" target="_blank"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button></a>
+    </p>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>javierpastorserrano@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Valencia, Spain</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+34 649016335</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">
+	<p>&copy; Javier Pastor Serrano 2017</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
