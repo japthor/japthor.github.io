@@ -26,6 +26,12 @@
 		color: white;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
+	imgcenter 
+	{
+		display: block;
+		margin: 0 auto;
+	}
+
 	</style>
 	
     <body>
@@ -36,7 +42,7 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a class="navbar-brand logo_h" href="portfolio.html"><img src="img/logo.png" alt=""></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -85,45 +91,49 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
+		
         <!--================Welcome Area =================-->
         <section class="welcome_area p_120" id="about-section">
         	<div class="container">
         		<div class="row welcome_inner">
         			<div class="col-lg-6">
         				<div class="welcome_text">
-        					<h4>About Myself</h4>
-        					<p style="text-align: justify;">I am a programmer with a big passion for playing and creating new/fun worlds.
-							<br><br>I am mainly interested in the field of gameplay. However, I also love the areas of VR, AR, AI, UI, QA and others more uncommon such as musical programming aspects. 
-							<br><br> As every person who studies or work in the field of video games, I like to play video games in my free time to relax. But, I also like to keep working on my personal projects to refresh and investigate new areas.</p>
+        					<h4>About Myself</h4>		
+							<p style="text-align: justify;">I am a programmer with a big passion for playing and creating new/fun worlds. <br><br>
+							I am mainly interested in the field of gameplay. However, I also love the areas of VR, AR, AI, UI, Finding bugs (QA) and others more uncommon such as musical programming aspects.<br><br>
+							As every person who studies or work in the field of video games, I like to play video games in my free time to relax. But, I also like to keep working on my personal projects to refresh and investigate new areas.<br><br>
+							Permission to work in EU and willing to relocate if required!
+							</p>
         					<div class="row">
         						<div class="col-md-4">
+								<a href="https://github.com/japthor" target="_blank">
         							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
-        								<h4>$2.5M</h4>
-        								<p>Total Donation</p>
+        								<i class="fa fa-align-center fa-github"></i>
+										<p>Check my code!</p><br>
+        							</div>
+								</a>
+        						</div>
+								<div class="col-md-4">
+								<a href="https://www.linkedin.com/in/javierpastorserrano/" target="_blank">
+        							<div class="wel_item">
+										<i class="fa fa-linkedin fa-10x"></i>
+        								<p>Professional networking</p>
         							</div>
         						</div>
+								<a href="https://www.youtube.com/channel/UChlLYwZSMWTDmIkhA7UzjCA" target="_blank">
         						<div class="col-md-4">
         							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
-        								<h4>1465</h4>
-        								<p>Total Projects</p>
+        								<i class="fa fa-youtube"></i>
+        								<p>Project videos!</p><br>
         							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
-        								<h4>3965</h4>
-        								<p>Total Volunteers</p>
-        							</div>
+								</a>
         						</div>
         					</div>
         				</div>
         			</div>
         			<div class="col-lg-6">
         				<div class="tools_expert">
-        					<h3>Skills</h3>
+        					<h3>Some Skills</h3>
         					<div class="skill_main">
 								<div class="skill_item">
 									<h4>Unity <span class="counter">80</span>%</h4>
@@ -150,6 +160,12 @@
 									</div>
 								</div>
 								<div class="skill_item">
+									<h4>Version Control Software <span class="counter">70</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
 									<h4>English <span class="counter">70</span>%</h4>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -163,8 +179,8 @@
 								</div>
 							</div>
         				</div>
-        			</div>
-        		</div>
+        			</div>			
+        		</div>				
         	</div>
         </section>
         <!--================End Welcome Area =================-->
@@ -187,7 +203,7 @@
 				</div>
 				<div class="projects_inner row">
 					<div class="col-lg-4 col-sm-6 brand games">
-					<a href="portfolio-details.html">
+					<a href="portfolio-a-dose-of-you.html">
 						<div class="projects_item">
 							<img class="img-fluid" src="img/projects/ADoseOfYou.png" alt="">
 							<div class="projects_text">
@@ -293,59 +309,45 @@
             <div class="container">
 				<div class="main_title">
 					<h2>Contact Me</h2>
-					<p>Feel free to contact me. I will get back to you soon!</p>
+					<p>Feel free to contact me. I will get back to you soon!</p><br>
+					<center><img class="img-fluid" src="img/banner/email.png"></center>
 				</div>
-
-                <div id="mapBox" class="mapBox" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
-                </div>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="contact_info">
                             <div class="info_item">
                                 <i class="lnr lnr-home"></i>
                                 <h6>Valencia, Spain</h6>
                                 <p>City Center.</p>
                             </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4">
+                        <div class="contact_info">
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+34649016335</a></h6>
+                                <h6>+34649016335</h6>
                                 <p>Mon to Fri 9am to 6 pm.</p>
                             </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4">
+                        <div class="contact_info">
                             <div class="info_item">
                                 <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">javierpastorserrano@gmail.com</a></h6>
+                                <h6>javierpastorserrano@gmail.com</h6>
                                 <p>Send me your query anytime!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                                </div>
+					<div class="col-lg-4">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="fa fa-linkedin fa-2x"></i>
+                                <h6>javierpastorserrano</h6>
+                                <p>Add me and/or send me a message!</p>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -376,7 +378,7 @@
         					<ul class="list">
         						<li><a href="https://www.linkedin.com/in/javierpastorserrano/"target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
         						<li><a href="https://github.com/japthor" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-        						<li><a href="https://www.youtube.com/watch?v=3mFbBa9TifM&feature=youtu.be" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+        						<li><a href="https://www.youtube.com/channel/UChlLYwZSMWTDmIkhA7UzjCA" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
         					</ul>
         				</aside>
         			</div>
