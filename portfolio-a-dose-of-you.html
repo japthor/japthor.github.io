@@ -19,6 +19,25 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
+	
+	<style>
+	.video-responsive {
+		height: 0;
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		position: relative;
+    }
+	.video-responsive iframe, .video-responsive object, .video-responsive embed {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+    }
+	
+	</style>
+	
     <body>
         
         <!--================Header Menu Area =================-->
@@ -79,7 +98,9 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="left_img">
-								<a href="https://www.youtube.com/watch?v=3mFbBa9TifM&feature=youtu.be"target="_blank"> <img class="img-fluid" src="img/projects/ADoseOfYou.png" alt=""></a>
+								<div class="video-responsive">
+									<iframe src="https://www.youtube.com/embed/3mFbBa9TifM" frameborder="0" allowfullscreen></iframe>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -90,7 +111,6 @@
 									<li><span>Engine</span>:  Unity/C#.</li>
 									<li><span>Company</span>:  Super Awesome Hyper Dimensional Mega Team.</li>
 									<li><span>Status</span>:  In progress.</li>
-									<li><span>Video</span>:  Press on the image.</li>
 								</ul>
 							</div>
 						</div>
