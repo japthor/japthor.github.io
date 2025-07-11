@@ -1937,7 +1937,7 @@ header .logo a {
 .popup-modal .link-box a {
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.2rem;
-	line-height: 6rem;
+	line-height: 7rem;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -1945,7 +1945,7 @@ header .logo a {
 	display: block;
 	text-align: center;
 	float: left;
-	width: 50%;
+	width: 33.33%;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1959,6 +1959,7 @@ header .logo a {
 	background: #cc005f;
 	border: none;
 }
+
 @media only screen and (max-width:600px) {
 	.popup-modal {
 		width: auto;
@@ -2534,6 +2535,11 @@ footer .copyright span::after {
 }
 footer .copyright span:last-child::after {
 	display: none;
+}
+
+.col-eight.tab-full {
+	width: 100%;
+	text-align: center;
 }
 
 /**
