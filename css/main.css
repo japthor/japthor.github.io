@@ -1492,34 +1492,52 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 12rem;
 }
 #about .section-intro {
-	margin-bottom: 3rem;
+	margin-bottom: 1.4rem;
 }
 
 .intro-info {
-	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
+	display: grid;
+	grid-template-columns: 9rem minmax(0, 1fr);
+	column-gap: 4rem;
+	align-items: start;
+	max-width: 820px;
+	margin: 3.2rem auto 0 auto;
 }
 .intro-info img {
 	height: 9rem;
 	width: 9rem;
 	border-radius: 50%;
 	margin: .9rem 0 0 0;
-	float: left;
 }
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+	padding-left: 0;
+	line-height: 1.65;
 }
 
 .about-content {
 	position: relative;
+	display: grid;
+	grid-template-columns: minmax(34rem, 42rem) minmax(34rem, 42rem);
+	justify-content: center;
+	column-gap: 7rem;
+	align-items: start;
 	text-align: left;
-	max-width: 850px;
+	max-width: 1040px;
 	margin-bottom: 3.6rem;
+}
+.about-content:before,
+.about-content:after {
+	content: none;
+	display: none;
+}
+.about-content > [class*="col-"] {
+	float: none;
+	width: auto;
+	padding: 0;
 }
 .about-content h3 {
 	font-family: "poppins-bold", sans-serif;
@@ -1529,29 +1547,38 @@ header .logo a {
 }
 .about-content .info-list {
 	list-style: none;
-	margin-left: 0;
+	margin: 2.2rem 0 0 0;
 }
 .about-content .info-list li {
 	padding: 0 0 1.5rem 0;
 	margin-bottom: .6rem;
 }
 .about-content .info-list li strong {
+	display: block;
 	font-family: "poppins-bold", sans-serif;
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	font-size: 1.5rem;
 	line-height: 3rem;
+	margin-bottom: .5rem;
+}
+.about-content .info-list .skill-tags {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 2rem;
+	row-gap: .8rem;
+	max-width: none;
 }
 .about-content .info-list li span {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
 	font-size: 1.5rem;
-	line-height: 1;
+	line-height: 1.35;
 }
 .about-content .skill-bars {
-	margin-top: 6rem;
+	margin: 4.2rem 0 3rem 0;
 }
 
 .button-section {
@@ -1570,9 +1597,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
-	.intro-info {
-		margin-right: 0;
-		margin-left: 0;
+	.about-content {
+		column-gap: 5rem;
 	}
 }
 @media only screen and (max-width:768px) {
@@ -1581,10 +1607,20 @@ header .logo a {
 		width: 7.8rem;
 	}
 	.intro-info .lead {
-		padding-left: 11rem;
+		padding-left: 0;
+	}
+	.about-content {
+		display: block;
+		max-width: 58rem;
 	}
 	.about-content h3 {
 		text-align: center;
+	}
+	.about-content .info-list,
+	.about-content .skill-bars {
+		max-width: 52rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.about-content .info-list, .about-content .skill-bars {
 		margin-bottom: 4.2rem;
@@ -1599,6 +1635,7 @@ header .logo a {
 }
 @media only screen and (max-width:600px) {
 	.intro-info {
+		display: block;
 		text-align: center;
 		margin-top: 3rem;
 	}
@@ -1611,6 +1648,23 @@ header .logo a {
 	.intro-info .lead {
 		padding-left: 0;
 		text-align: center;
+		max-width: 52rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-content {
+		text-align: center;
+	}
+	.about-content .info-list {
+		max-width: 34rem;
+	}
+	.about-content .info-list .skill-tags {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		max-width: none;
+	}
+	.about-content .skill-bars {
+		max-width: 34rem;
 	}
 }
 
