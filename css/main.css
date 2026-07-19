@@ -3181,6 +3181,7 @@ footer .copyright span:last-child::after {
 
 footer .copyright a {
 	color: rgba(255, 255, 255, 0.62);
+	margin-left: .35rem;
 }
 
 footer .copyright a:hover,
@@ -3278,15 +3279,28 @@ footer .copyright a:focus {
 	}
 
 	.about-content > [class*="col-"] {
-		padding: 2.6rem !important;
+		padding: 2.4rem !important;
 	}
 
 	.about-content .info-list .skill-tags {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: .75rem;
+		justify-items: stretch;
 	}
 
 	.about-content .info-list li span {
-		font-size: 1.3rem;
+		width: 100%;
+		min-height: 3.8rem;
+		font-size: 1.25rem;
+		padding: .75rem .85rem;
+	}
+
+	.about-content .info-list li span.skill-tag-wide {
+		grid-column: 1 / -1;
+	}
+
+	.about-content .info-list .skill-tags-single {
+		grid-template-columns: 1fr;
 	}
 
 	#portfolio .overlay {
