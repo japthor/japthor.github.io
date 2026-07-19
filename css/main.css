@@ -3217,6 +3217,10 @@ footer .copyright a:focus {
 		font-size: 3rem;
 	}
 
+	.section-intro {
+		margin-bottom: 2.8rem;
+	}
+
 	.intro-info,
 	.about-content > [class*="col-"],
 	#resume .timeline-content {
@@ -3241,6 +3245,23 @@ footer .copyright a:focus {
 }
 
 @media only screen and (max-width:600px) {
+	#about,
+	#resume,
+	#portfolio,
+	#contact {
+		padding-top: 5.4rem;
+		padding-bottom: 5.6rem;
+	}
+
+	.section-intro h5 {
+		font-size: 1.35rem;
+	}
+
+	.section-intro h1 {
+		font-size: 2.65rem;
+		line-height: 1.2;
+	}
+
 	.popup-modal {
 		width: calc(100% - 3.2rem);
 		margin: 0 auto;
@@ -3275,11 +3296,46 @@ footer .copyright a:focus {
 	}
 
 	.intro-info {
-		padding: 2.4rem;
+		padding: 2.2rem;
+		margin-top: 2.2rem;
+	}
+
+	.intro-info .lead {
+		font-size: 1.48rem;
+		line-height: 1.58;
+	}
+
+	.about-content {
+		max-width: calc(100% - 3.2rem);
+		margin-top: 2.6rem;
+		margin-bottom: 2.6rem;
 	}
 
 	.about-content > [class*="col-"] {
-		padding: 2.4rem !important;
+		margin-bottom: 1.8rem;
+		padding: 2.2rem !important;
+	}
+
+	.about-content h3 {
+		font-size: 1.5rem;
+		letter-spacing: .2rem;
+		margin-bottom: 1.8rem;
+	}
+
+	.about-content .info-list {
+		max-width: none;
+		margin-top: 0;
+	}
+
+	.about-content .info-list li {
+		padding-bottom: 1.2rem;
+	}
+
+	.about-content .info-list li strong {
+		font-size: 1.25rem;
+		letter-spacing: .16rem;
+		line-height: 2.2rem;
+		margin-bottom: .9rem;
 	}
 
 	.about-content .info-list .skill-tags {
@@ -3290,9 +3346,9 @@ footer .copyright a:focus {
 
 	.about-content .info-list li span {
 		width: 100%;
-		min-height: 3.8rem;
-		font-size: 1.25rem;
-		padding: .75rem .85rem;
+		min-height: 3.6rem;
+		font-size: 1.2rem;
+		padding: .7rem .75rem;
 	}
 
 	.about-content .info-list li span.skill-tag-wide {
@@ -3301,6 +3357,32 @@ footer .copyright a:focus {
 
 	.about-content .info-list .skill-tags-single {
 		grid-template-columns: 1fr;
+	}
+
+	.button-section {
+		margin-top: 2.2rem;
+	}
+
+	.button-section .button {
+		width: min(100%, 25rem);
+		margin-bottom: 0;
+	}
+
+	#resume .resume-header h2 {
+		font-size: 2.4rem;
+		margin-bottom: 2.2rem;
+	}
+
+	#resume .timeline-wrap {
+		margin-bottom: 3.8rem;
+	}
+
+	#resume .timeline-content {
+		padding: 2.2rem 2.2rem 2.2rem 6rem;
+	}
+
+	#portfolio .folio-item {
+		padding: .7rem;
 	}
 
 	#portfolio .overlay {
