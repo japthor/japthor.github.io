@@ -3418,4 +3418,331 @@ footer .copyright a:focus {
 	}
 }
 
+/*
+ * ===================================================================
+ * Portfolio grid refinement
+ * -------------------------------------------------------------------
+ * Keep the original portfolio grid and content proportions intact while
+ * giving the project section a calmer, more deliberate finish.
+ */
+/* Preserve the two-column portfolio grid; add only a small, consistent gutter. */
+#portfolio .folio-item {
+	padding: 0.45rem;
+}
+
+#portfolio .item-wrap {
+	border-radius: 1.35rem;
+	box-shadow: 0 12px 30px rgba(18, 18, 24, 0.09);
+}
+
+#portfolio .folio-item:hover .item-wrap {
+	box-shadow: 0 18px 38px rgba(18, 18, 24, 0.14);
+}
+
+#portfolio .folio-item:hover img {
+	transform: scale(1.025);
+}
+
+#portfolio .folio-item:hover .overlay {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.8));
+}
+
+#portfolio .folio-title {
+	font-size: 2.55rem;
+	letter-spacing: -0.02rem;
+}
+
+#portfolio .folio-types {
+	display: inline-block;
+	margin-top: 0.55rem;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+/* Section and resume typography: a clear, consistent scale from section to role. */
+#about .section-intro h5,
+#resume .section-intro h5,
+#portfolio .section-intro h5,
+#contact .section-intro h5 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 3rem;
+	line-height: 1.15;
+	letter-spacing: 0.12rem;
+	margin-bottom: 0.8rem;
+}
+
+#about .section-intro h1,
+#resume .section-intro h1,
+#portfolio .section-intro h1,
+#contact .section-intro h1 {
+	font-size: 2.65rem;
+	line-height: 1.25;
+	letter-spacing: -0.04rem;
+	margin-bottom: 0;
+}
+
+#resume .section-intro h5 {
+	color: var(--accent);
+}
+
+#resume .section-intro h1 {
+	color: var(--ink);
+}
+
+#resume .resume-header h2 {
+	font-size: 2.3rem;
+	line-height: 1.3;
+	letter-spacing: -0.02rem;
+	margin-bottom: 2.5rem;
+}
+
+#resume .timeline-header h3 {
+	font-size: 1.95rem;
+	line-height: 1.35;
+	letter-spacing: -0.035rem;
+	margin-bottom: 0.55rem;
+}
+
+#resume .timeline-header {
+	padding-right: 50px;
+}
+
+#resume .timeline-header h3 {
+	font-size: 1.8rem;
+	white-space: nowrap;
+}
+
+#resume .timeline-header p {
+	font-family: "poppins-medium", sans-serif;
+	font-size: 1.35rem;
+	line-height: 1.5;
+	letter-spacing: 0.02rem;
+	color: var(--accent);
+	margin-bottom: 0;
+}
+
+#resume .timeline-content h4 {
+	font-size: 2.05rem;
+	line-height: 1.35;
+	margin-bottom: 1.7rem;
+}
+
+#contact .section-intro {
+	max-width: 92rem;
+}
+
+#contact .section-intro h1 {
+	margin-bottom: 1.5rem;
+}
+
+#contact .section-intro p.lead {
+	max-width: 88rem;
+	margin: 0 auto;
+	font-size: 1.8rem;
+	line-height: 1.7;
+}
+
+@media only screen and (max-width: 600px) {
+	#portfolio .folio-item {
+		padding: 0.35rem;
+	}
+
+	#portfolio .folio-title {
+		font-size: 2.2rem;
+	}
+
+	#resume .section-intro h1 {
+		font-size: 3rem;
+	}
+
+	#about .section-intro h5,
+	#resume .section-intro h5,
+	#portfolio .section-intro h5,
+	#contact .section-intro h5 {
+		font-size: 2.35rem;
+	}
+
+	#about .section-intro h1,
+	#resume .section-intro h1,
+	#portfolio .section-intro h1,
+	#contact .section-intro h1 {
+		font-size: 2.15rem;
+	}
+
+	#resume .resume-header h2 {
+		font-size: 2.2rem;
+		margin-bottom: 2.1rem;
+	}
+
+	#resume .timeline-header h3 {
+		font-size: 1.8rem;
+		white-space: normal;
+	}
+
+	#resume .timeline-header {
+		padding-right: 15px;
+	}
+
+	#resume .timeline-header p {
+		font-size: 1.3rem;
+	}
+
+	#resume .timeline-content h4 {
+		font-size: 1.75rem;
+	}
+
+	#contact .section-intro h1 {
+		margin-bottom: 1.2rem;
+	}
+
+	#contact .section-intro {
+		max-width: calc(100% - 3.2rem);
+	}
+
+	#contact .section-intro p.lead {
+		font-size: 1.6rem;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	#resume .education-timeline .timeline-header {
+		padding-right: 50px;
+	}
+
+	#resume .education-timeline .timeline-header h3 {
+		font-size: 1.65rem;
+		line-height: 1.35;
+		white-space: normal;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#resume .timeline-header {
+		padding-right: 15px;
+	}
+
+	#resume .timeline-header h3 {
+		white-space: normal;
+	}
+}
+
+/* Small visual polish for the non-resume sections. */
+@media only screen and (min-width: 769px) {
+	#about .about-content {
+		display: flex;
+		align-items: stretch;
+		gap: 2rem;
+	}
+
+	#about .about-content > [class*="col-"] {
+		float: none;
+		width: auto;
+		flex: 1 1 0;
+		margin-bottom: 0;
+	}
+
+	#about,
+	#portfolio,
+	#contact {
+		padding-top: 9rem;
+		padding-bottom: 8rem;
+	}
+}
+
+#about .about-content > [class*="col-"] {
+	box-shadow: 0 12px 28px rgba(18, 18, 24, 0.06);
+}
+
+#about .about-content .skill-tags span {
+	transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+#about .about-content .skill-tags span:hover,
+#about .about-content .skill-tags span:focus {
+	background: #ffffff;
+	border-color: rgba(234, 0, 111, 0.32);
+	color: var(--ink);
+	transform: translateY(-0.1rem);
+}
+
+#contact .contact-info {
+	max-width: 92rem;
+	margin-top: 5.2rem;
+	padding-top: 3.2rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#contact .contact-info .icon i {
+	color: var(--accent);
+	opacity: 0.92;
+}
+
+#contact .contact-info h5 {
+	font-size: 1.25rem;
+	letter-spacing: 0.14rem;
+	margin-bottom: 0.8rem;
+}
+
+#contact .contact-info p {
+	font-size: 1.45rem;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	#contact .contact-info {
+		margin-top: 4rem;
+		padding-top: 2.4rem;
+	}
+}
+
+/* Hero refinement while keeping the existing introduction copy. */
+@media only screen and (min-width: 769px) {
+	.intro-content h1 {
+		font-size: 5rem;
+		max-width: 920px;
+	}
+
+	.intro-content .intro-position {
+		font-size: 1.35rem;
+		letter-spacing: 0.14rem;
+		margin-top: 1.4rem;
+	}
+
+	.intro-content .intro-position span {
+		padding: 0.65rem 1.25rem;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 999px;
+		background: rgba(0, 0, 0, 0.16);
+	}
+
+	.intro-content .intro-position span::before,
+	.intro-content .intro-position span::after {
+		display: none;
+	}
+}
+
+.intro-overlay {
+	opacity: 0.99;
+}
+
+/* Clearer section transitions without adding heavy borders. */
+#about {
+	background: #ffffff;
+}
+
+#resume {
+	background: #f0f0f3;
+	box-shadow: inset 0 1px 0 rgba(18, 18, 24, 0.045), inset 0 -1px 0 rgba(18, 18, 24, 0.045);
+}
+
+#portfolio {
+	background: #fafafd;
+	box-shadow: inset 0 1px 0 rgba(18, 18, 24, 0.035);
+}
+
+#contact {
+	background: #17171b;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
 /*# sourceMappingURL=main.css.map */
