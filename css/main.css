@@ -2702,6 +2702,12 @@ header .top-bar {
 	letter-spacing: -.18rem;
 }
 
+.intro-content .intro-position {
+	font-family: "poppins-medium", sans-serif;
+	font-size: 1.45rem;
+	letter-spacing: .24rem;
+}
+
 .intro-content h5 {
 	color: var(--accent);
 }
@@ -2919,14 +2925,23 @@ a.button.button-primary {
 #resume .timeline-ico {
 	background: var(--accent);
 	box-shadow: 0 10px 24px rgba(255, 0, 119, 0.24);
+	z-index: 2;
 }
 
 #resume .timeline-content {
+	position: relative;
+	z-index: 1;
 	background: var(--card-bg);
 	border: 1px solid var(--line);
 	border-radius: 2.2rem;
 	box-shadow: var(--shadow-soft);
 	padding: 3rem 3.2rem;
+	transition: transform .22s ease, box-shadow .22s ease;
+}
+
+#resume .timeline-content:hover {
+	transform: translateY(-.3rem);
+	box-shadow: 0 2.2rem 5rem rgba(0, 0, 0, 0.11);
 }
 
 #resume .timeline-content h4::after {
@@ -2954,6 +2969,11 @@ a.button.button-primary {
 
 #portfolio .folio-item img {
 	width: 100%;
+	transition: transform .35s ease;
+}
+
+#portfolio .folio-item:hover img {
+	transform: scale(1.035);
 }
 
 #portfolio .overlay {
