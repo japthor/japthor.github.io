@@ -161,7 +161,8 @@ section[id] { scroll-margin-top: 72px; }
 .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 80px; align-items: center; width: 100%; padding-top: 120px; padding-bottom: 88px; }
 .hero-copy { container-type: inline-size; }
 .hero-title { font-stretch: 125%; font-weight: 800; font-size: min(3.4rem, 7.2cqw); white-space: nowrap; line-height: 1.04; letter-spacing: -0.025em; margin-bottom: 12px; }
-.hero-role .amp { font-family: Arial, Helvetica, sans-serif; font-weight: 700; }
+.amp { font-family: Arial, Helvetica, sans-serif; font-weight: inherit; }
+.hero-role .amp { font-weight: 700; }
 .hero-role .role-sep { opacity: .6; margin: 0 .15em; }
 .hero-role { font-stretch: 125%; font-weight: 800; font-size: min(1.7rem, 4.1cqw); white-space: nowrap; line-height: 1.15; letter-spacing: -0.02em; color: var(--red-hot); margin-bottom: 20px; }
 @media (max-width: 600px) { .hero-role { font-stretch: 100%; font-size: 5cqw; } }
