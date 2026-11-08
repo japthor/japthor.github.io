@@ -20,6 +20,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#121212">
 	<link rel="preload" href="fonts/archivo/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="css/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0" as="font" type="font/woff" crossorigin>
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/site.css">
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -30,7 +31,8 @@
 	<a class="skip" href="#work">Skip to projects</a>
 	<div class="progress" aria-hidden="true"></div>
 
-	<header class="site-header" id="top">
+	<span id="top"></span>
+	<header class="site-header">
 		<div class="wrap header-inner">
 			<a class="brand" href="#top"><span class="pixel" aria-hidden="true"></span>Javier Pastor Serrano<span class="brand-sub">Portfolio</span></a>
 			<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
@@ -347,7 +349,7 @@
 	<footer class="site-footer">
 		<div class="wrap footer-inner">
 			<p>&copy; 2026 Javier Pastor Serrano</p>
-			<a href="#top">Back to top</a>
+			<a href="#top">Back to top<i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 		</div>
 	</footer>
 
