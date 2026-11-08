@@ -1,1228 +1,635 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-   <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Javier Pastor Serrano | Game Programmer Portfolio</title>
-	<meta name="description" content="Portfolio of Javier Pastor Serrano, a programmer with experience in Unity/C#, large-scale live mobile games, gameplay and UI systems, social features, SDK integrations, analytics, A/B testing, server-side support, KPI-driven improvements, optimisation and bug fixing.">  
+	<meta charset="utf-8">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Javier Pastor Serrano","jobTitle":"Programmer","worksFor":{"@type":"Organization","name":"Scopely"},"url":"https://japthor.github.io/portfolio.html","email":"javierpastorserrano@gmail.com","sameAs":["https://www.linkedin.com/in/javierpastorserrano/","https://github.com/japthor"]}</script>
+	<title>Javier Pastor Serrano | Programmer Portfolio</title>
+	<meta name="description" content="Portfolio of Javier Pastor Serrano, a programmer with a background in game development. Interactive features, UI and social systems for live products used by millions.">  
 	<meta name="author" content="Javier Pastor Serrano">
-
-   <!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
-
-   <!-- script
-   ================================================== -->   
-	<script src="js/modernizr.js"></script>
-	
-	<!--
-	<script src="js/pace.min.js"></script>
-	-->
-	
-   <!-- favicons
+	<link rel="canonical" href="https://japthor.github.io/portfolio.html">
+	<!-- link previews (LinkedIn, WhatsApp, Slack, email)
 	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
-
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://japthor.github.io/portfolio.html">
+	<meta property="og:title" content="Javier Pastor Serrano | Programmer Portfolio">
+	<meta property="og:description" content="Programmer with a background in game development. Interactive features, UI and social systems for live products used by millions.">
+	<meta property="og:image" content="https://japthor.github.io/images/og-image.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#121212">
+	<link rel="preload" href="fonts/archivo/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/site.css">
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
+<body>
+	<a class="skip" href="#work">Skip to projects</a>
+	<div class="progress" aria-hidden="true"></div>
 
-<body id="top">
+	<header class="site-header" id="top">
+		<div class="wrap header-inner">
+			<a class="brand" href="#top"><span class="pixel" aria-hidden="true"></span>Javier Pastor Serrano<span class="brand-sub">Portfolio</span></a>
+			<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
+			<nav id="site-nav" class="site-nav" aria-label="Main">
+				<a href="#intro">Home</a>
+				<a href="#work">Work</a>
+				<a href="#experience">Experience</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+				<a class="nav-cv" href="cv/Javier_Pastor_Serrano_CV_V9.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+			</nav>
+		</div>
+	</header>
 
-	<!-- header 
-   ================================================== -->
-   <header>   	
-   	<div class="row">
-
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-	   		<div class="logo">
-		         <a href="#intro" class="smoothscroll">Portfolio - JPS</a>
-		      </div>		      
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
-
-	<!-- intro section
-   ================================================== -->
-   <section id="intro">   
-
-   	<div class="intro-overlay"></div>	
-
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-	   			<h5>Hello, World.</h5>
-            <h1>My name is<br>Javier Pastor Serrano.</h1>
-
-	   			<p class="intro-position">
-					<span>Game Programmer · Mobile Games · Live Operations</span>
-	   			</p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">About Me</a>
-
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">        
-         <li><a href="https://www.linkedin.com/in/javierpastorserrano/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn profile"><i class="fa fa-linkedin"></i></a></li>
-         <li><a href="mailto:javierpastorserrano@gmail.com" aria-label="Email Javier Pastor Serrano" title="Email Javier Pastor Serrano"><i class="fa fa-envelope"></i></a></li>
-		 <li><a href="https://github.com/japthor" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub profile"><i class="fa fa-github"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About</h5>
-			<h1>What I bring.</h1>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpeg" alt="Javier Pastor Serrano profile picture">
-   				<p class="lead">
-				I am a programmer with a background in game development and experience building products from early prototypes to polished releases. I enjoy creating reliable systems, useful tools and thoughtful user-facing features in fast-moving teams.
-				</p>
-			</div>   		
-   		</div>
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-		
-		<div class="col-four tab-full">
-
-   			<h3>Main Skills</h3>
-
-   			<ul class="info-list">
-				<li>
-					<div class="skill-tags skill-tags-primary">
-						<span>Unity Engine</span>
-						<span>C#</span>
-						<span>OOP</span>
-						<span>Optimisation</span>
-						<span>Code Architecture</span>
-						<span>Design Patterns</span>
-						<span>A/B Testing</span>
-						<span>Analytics</span>
-						<span>Live Operations</span>
-						<span>SDK Integrations</span>
-						<span class="skill-tag-wide">iOS / Android</span>
-						<span class="skill-tag-wide">Git / Version Control</span>
-						<span class="skill-tag-wide">Gameplay / UI Systems</span>
+	<main>
+		<section class="hero" id="intro">
+			<div class="wrap hero-inner">
+				<div class="hero-copy">
+					<h1 class="hero-title" aria-label="Javier Pastor Serrano"><span class="word"><span class="word-in" style="--i:0">Javier</span></span> <span class="word"><span class="word-in" style="--i:1">Pastor</span></span> <span class="word"><span class="word-in" style="--i:2">Serrano</span></span></h1>
+					<p class="hero-role" data-hero style="--d:300ms">Programmer <span class="role-sep" aria-hidden="true">·</span> Games <span class="amp">&amp;</span> Live Products</p>
+					<p class="hero-lede" data-hero style="--d:380ms">With a background in game development, I build interactive features, UI and social systems used by millions of players. Currently working on Monopoly GO! at Scopely.</p>
+					<div class="hero-ctas" data-hero style="--d:460ms">
+						<a class="btn btn-red" href="#work">See projects</a>
+						<a class="btn btn-ghost" href="cv/Javier_Pastor_Serrano_CV_V9.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+						<a class="btn btn-ghost" href="#contact">Contact me</a>
 					</div>
-   				</li>
-   			</ul>
+				</div>
+				<div class="hero-collage" aria-hidden="true"><figure class="tile-big"><img src="images/portfolio/monopolygo.jpg" width="1200" height="675" alt="" decoding="async"><span><span class="pixel"></span>Current project</span></figure><img src="images/portfolio/skylinebowling.jpg" width="1200" height="675" alt="" decoding="async"><img src="images/portfolio/derailed.jpg" width="1200" height="675" alt="" decoding="async"><img src="images/portfolio/helixjump.jpg" width="1200" height="675" alt="" decoding="async"><img src="images/portfolio/oildigging.jpg" width="1200" height="675" alt="" decoding="async"></div>
+			</div>
+		<a class="scroll-hint" href="#work" aria-label="Scroll to projects"><span></span></a>
+		</section>
 
-   		</div>
+		<section id="work" class="section section-work">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 class="section-title" data-reveal>Work</h2>
+				</div>
+				<ul class="cards">
+				<li class="card card--hero" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-monopoly-go" aria-haspopup="dialog">
+						<img src="images/portfolio/modals/m-monopolygo.jpg" width="1920" height="1080" loading="eager" decoding="async" alt="">
+						<span class="card-badge">Current project</span>
+						<span class="card-body"><span class="card-title">Monopoly GO!</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card card--big" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-skyline-bowling" aria-haspopup="dialog">
+						<img src="images/portfolio/skylinebowling.jpg" width="1200" height="675" loading="eager" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">02</span>
+						<span class="card-body"><span class="card-title">Skyline Bowling</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card card--big" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-derailed-survival-adventure" aria-haspopup="dialog">
+						<img src="images/portfolio/derailed.jpg" width="1200" height="675" loading="eager" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">03</span>
+						<span class="card-body"><span class="card-title">Derailed: Survival Adventure</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card card--big" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-helix-jump" aria-haspopup="dialog">
+						<img src="images/portfolio/helixjump.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">04</span>
+						<span class="card-body"><span class="card-title">Helix Jump</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card card--big" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-sharpshooter-blitz" aria-haspopup="dialog">
+						<img src="images/portfolio/sharpshooterblitz.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">05</span>
+						<span class="card-body"><span class="card-title">Sharpshooter Blitz</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-baseball-boy" aria-haspopup="dialog">
+						<img src="images/portfolio/baseballboy.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">06</span>
+						<span class="card-body"><span class="card-title">Baseball Boy</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-oil-digging-3d" aria-haspopup="dialog">
+						<img src="images/portfolio/oildigging.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">07</span>
+						<span class="card-body"><span class="card-title">Oil Digging 3D</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-drawer-sort" aria-haspopup="dialog">
+						<img src="images/portfolio/drawersort.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">08</span>
+						<span class="card-body"><span class="card-title">Drawer Sort</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-tower-smash" aria-haspopup="dialog">
+						<img src="images/portfolio/towersmash.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">09</span>
+						<span class="card-body"><span class="card-title">Tower Smash</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-hospital-simulator-3d" aria-haspopup="dialog">
+						<img src="images/portfolio/hospitalsimulator.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">10</span>
+						<span class="card-body"><span class="card-title">Hospital Simulator 3D</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-wheel-race" aria-haspopup="dialog">
+						<img src="images/portfolio/wheelrace.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">11</span>
+						<span class="card-body"><span class="card-title">Wheel Race</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-car-dealer-3d" aria-haspopup="dialog">
+						<img src="images/portfolio/cardealer.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">12</span>
+						<span class="card-body"><span class="card-title">Car Dealer 3D</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-build-it-3d" aria-haspopup="dialog">
+						<img src="images/portfolio/buildit.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">13</span>
+						<span class="card-body"><span class="card-title">Build It 3D</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				<li class="card" data-reveal>
+					<button type="button" class="card-hit" data-open="dlg-a-dose-of-you" aria-haspopup="dialog">
+						<img src="images/portfolio/adoseofyou.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="">
+						<span class="card-no" aria-hidden="true">14</span>
+						<span class="card-body"><span class="card-title">A Dose Of You</span></span>
+						<span class="card-go" aria-hidden="true"><i class="arrow"></i></span>
+					</button>
+				</li>
+				</ul>
+			</div>
+		</section>
 
-		<div class="col-four tab-full">
-
-   			<h3>Complementary Skills</h3>
-
-   			<ul class="info-list">
-				<li>
-					<div class="skill-tags">
-						<span>Unreal Engine</span>
-						<span>C++</span>
-						<span>Debugging</span>
-						<span>Profiling</span>
-						<span>Testing</span>
-						<span>Build &amp; Release</span>
-						<span>Tools</span>
-						<span>DOTween</span>
-						<span>Jira</span>
-						<span>Notion</span>
-						<span>UML</span>
-						<span>Shaders (Basic)</span>
-						<span class="skill-tag-wide">AI-assisted Development</span>
-						<span class="skill-tag-wide">Server-side Support</span>
+		<section id="experience" class="section section-exp">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 class="section-title" data-reveal>Experience</h2>
 					</div>
-   				</li>
-   			</ul>
-
-   		</div>
-		
-		<div class="col-four tab-full">
-
-   			<h3>General Skills</h3>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Soft Skills:</strong>
-					<div class="skill-tags">
-						<span>Collaboration</span>
-						<span>Communication</span>
-						<span>Problem Solving</span>
-						<span>Adaptability</span>
-						<span>Task Estimation</span>
-						<span>Agile Workflow</span>
-						<span>Ownership</span>
-						<span>Attention to Detail</span>
+				<ol class="jobs">
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">Apr 2026 – <span class="now">Present</span></p>
+						<h3 class="job-org">Scopely</h3>
+						<p class="job-role">Engineer</p>
 					</div>
-
-   				</li>
-				<li>
-					<strong>Languages:</strong>
-					<div class="skill-tags skill-tags-single">
-   						<span class="skill-tag-wide">English - Professional</span>
-						<span class="skill-tag-wide">Spanish - Native</span>
+					<div class="job-main">
+						<ul class="job-points"><li>Contributing to Monopoly GO!, a large-scale Unity live game played by millions of players.</li><li>Developing Friends-related social systems and player-facing flows, including Community Chest, alongside internal tooling.</li><li>Supporting live operations through bug fixes, new content and selected server-side tasks.</li><li>Supporting A/B testing and KPI-focused feature improvements in collaboration with product, design and engineering.</li></ul>
+						<ul class="tech" aria-label="Technologies"><li>Unity</li><li>C#</li><li>Git</li><li>Internal tools</li><li>Looker</li><li>Bugsnag</li><li>Jira</li><li>A/B Testing</li><li class="is-wide">Server-side support</li><li class="is-wide">AI-assisted Development</li></ul>
 					</div>
-   				</li>
-				
-   			</ul> <!-- /info-list -->
-
-   		</div>
-
-   	</div>
-
-   	<div class="row button-section">
-   		<div class="col-twelve">
-            <a href="cv/Javier_Pastor_Serrano_CV_V9.pdf" target="_blank" rel="noopener noreferrer" title="Download CV" class="button button-primary">Download CV</a>
-   		</div>   		
-   	</div>
-
-   </section> <!-- /process-->    
-
-
-   <!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Resume</h5>
-   			<h1>Where I have worked.</h1>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Work Experience</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-							<h3>Engineer</h3>
-	   					<p>Apr 2026 - Present</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Scopely</h4>
-	   					<ul>
-							<li>Contributing to Monopoly Go!, a large-scale Unity live game played by millions of players.</li>
-							<li>Developing Friends-related social systems and player-facing flows, including Community Chest, alongside internal tooling.</li>
-							<li>Supporting live operations through bug fixes, new content and selected server-side tasks.</li>
-							<li>Supporting A/B testing and KPI-focused feature improvements in collaboration with product, design and engineering.</li>
-							<li>Technologies: Unity, C#, Git, internal tools, Looker, Bugsnag, Jira, A/B Testing, server-side support.</li>
-					  </ul>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-							<h3>Mid-Level Game Programmer</h3>
-	   					<p>Jun 2025 - Jan 2026</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Voodoo</h4>
-	   					<ul>
-							<li>Contributed to high-performing mobile titles by adding gameplay features and refining established systems.</li>
-							<li>Integrated and updated SDKs for analytics, ads, IAPs and internal tooling.</li>
-							<li>Prepared iOS and Android builds, investigated release issues and shipped regular store updates.</li>
-							<li>Configured A/B tests and used analytics to improve KPIs across live titles, alongside build-size and runtime performance work.</li>
-							<li>Technologies: Unity, C#, Git, internal SDK, Firebase, GameAnalytics, IAPs, Ads, A/B Testing, Notion.</li>
-					  </ul>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-							<h3>Mid-Level Game Programmer</h3>
-	   					<p>May 2020 - Jun 2025</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Kwalee</h4>
-	   					<ul>
-						  <li>Developed and shipped mobile games from prototype to release across new and existing titles.</li>
-						  <li>Maintained live titles through gameplay updates, bug fixes, SDK integrations and iOS/Android releases.</li>
-						  <li>Collaborated with design, art, production and product teams across prototype, production and LiveOps.</li>
-						  <li>Improved performance and build size, using analytics and A/B testing to support KPI improvements.</li>
-						  <li>Technologies: Unity, C#, Git, internal SDK, Firebase, Jenkins, GameAnalytics, IAPs, Ads, A/B Testing, Jira.</li>
-						</ul>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Junior Game Programmer</h3>
-	   					<p>Jun. 2018 - Apr. 2019</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Super Awesome Hyper Dimensional Team</h4>
-	   					<ul>
-						  <li>Built a playable prototype and presented it to 500+ attendees at Indie Summit Valencia.</li>
-						  <li>Implemented gameplay mechanics, scene flow and multi-platform support.</li>
-						  <li>Iterated on feedback from players and judges during the showcase.</li>
-						  <li>Technologies: Unity, C#, Git, Spine 2D.</li>
-						</ul>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Junior Game Programmer</h3>
-	   					<p>Mar. 2018 - Jun. 2018</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Iction</h4>
-	   					<ul>
-						  <li>Implemented gameplay features and fixed technical issues across Unity projects.</li>
-						  <li>Helped with production tasks, project setup and day-to-day development support.</li>
-						  <li>Technologies: Unity, C#, Git.</li>
-						</ul>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Junior Game Programmer</h3>
-	   					<p>Jan. 2017 - Dec. 2017</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Infinite Games Studios</h4>
-	   					<ul>
-						  <li>Implemented gameplay features and supporting systems in Unity.</li>
-						  <li>Worked on bug fixing, performance improvements and general project stability.</li>
-						  <li>Technologies: Unity, C#, Git.</li>
-						</ul>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-	    <div class="row resume-timeline education-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Education</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>BSc (Hons) Computer Games Programming</h3>
-	   					<p>2016 - 2017</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Teesside University</h4>
-	   					<p>First-Class Honours (70%).<br><br>
-						Advanced Game Development, Artificial Intelligence for Video Games, Computing Projects, Mobile Game Programming, Multiplayer and Social Games.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>HND in Video Games Programming</h3>
-	   					<p>2013 - 2016</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>ESAT</h4>
-	   					<p>Second-Class Honours (60%).<br><br>
-						Advanced Programming, Artificial Intelligence for Video Games, Computer Architecture, Databases, Graphics Engine Programming, High-Level Programming, Low-Level Programming, Mobile Game Programming, Network Programming, Operating Systems, Sound Production and Editing, Video Game Design, Video Game Physics, Web Programming.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-		
-	</section> <!-- /features -->
-
-
-	<!-- Portfolio Section
-   ================================================== -->
-	<section id="portfolio">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Portfolio</h5>
-   			<h1>Selected projects and contributions.</h1>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-				<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/monopolygo.png" alt="Monopoly Go!">
-	                  <a href="#modal-14" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Monopoly Go!</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	 Game Project
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/skylinebowling.png" alt="Skyline Bowling">
-	                  <a href="#modal-01" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Skyline Bowling</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	 Game Project
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/derailed.png" alt="Derailed: Survival Adventure">
-	                  <a href="#modal-02" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Derailed: Survival Adventure</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	 Game Project
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-					
-					<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/helixjump.png" alt="Helix Jump">
-	                  <a href="#modal-06" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Helix Jump</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	 Game Project
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/sharpshooterblitz.png" alt="Sharpshooter Blitz">
-	                  <a href="#modal-07" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Sharpshooter Blitz</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-					
-					<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/baseballboy.png" alt="Baseball Boy">
-	                  <a href="#modal-08" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Baseball Boy</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	 Game Project
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-					
-					 <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/oildigging.png" alt="Oil Digging 3D">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Oil Digging 3D</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-					
-					<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/drawersort.png" alt="Drawer Sort">
-	                  <a href="#modal-04" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Drawer Sort</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	 Game Project
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-					
-					<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/towersmash.png" alt="Tower Smash">
-	               	<a href="#modal-05" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Tower Smash</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/hospitalsimulator.png" alt="Hospital Simulator 3D">
-	               	<a href="#modal-09" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Hospital Simulator 3D</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-					
-					
-				<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/wheelrace.png" alt="Wheel Race">
-	                  <a href="#modal-10" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Wheel Race</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/cardealer.png" alt="Car Dealer 3D">
-	                  <a href="#modal-11" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Car Dealer 3D</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->     
-
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/buildit.png" alt="Build It 3D">
-	                  <a href="#modal-12" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Build It 3D</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-   
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/adoseofyou.png" alt="A Dose Of You">
-	                  <a href="#modal-13" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">A Dose Of You</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Game Project
-		     					      </span>		     		
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->   
-
-
-	            <!-- modal popups - begin
-	            ============================================================= -->
-				
-				<div id="modal-14" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-monopolygo.png" alt="Monopoly Go! gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Monopoly Go!</h4>		      
-				      <p style="text-align: justify;">Monopoly GO! is a large-scale live mobile game played by millions, reimagining the classic board game as a fast-paced social experience built around events, collection, progression and regular updates.
-					  <br><br>I contribute to Friends-related social systems and internal tools, including Community Chest, while supporting A/B testing, KPI-driven improvements, bug fixing and selected server-side tasks.
-						  </p>
-					   </div>
-
-			         <div class="link-box">
-						<a href="https://play.google.com/store/apps/details?id=com.scopely.monopolygo" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-						<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://apps.apple.com/us/app/monopoly-go/id1621328561" target="_blank" rel="noopener noreferrer" aria-label="Apple Store" title="Apple Store">
-						<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=cwfoZy3mNTI" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-						<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
+				</li>
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">Jun 2025 – Jan 2026</p>
+						<h3 class="job-org">Voodoo</h3>
+						<p class="job-role">Mid-Level Game Programmer</p>
 					</div>
-				
-				</div> 
-				
-				<div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-skylinebowling.png" alt="Skyline Bowling gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Skyline Bowling</h4>		      
-					      <p style="text-align: justify;">A hybrid-casual bowling game built around quick sessions, simple drag controls and satisfying physics.
-						  <br><br>I worked on live updates, gameplay changes, SDK integrations, bug fixing, performance optimisation and build-size reduction. I also helped set up and track A/B tests for KPI-driven product iterations.
-						  </p>
-					   </div>
-
-			         <div class="link-box">
-						<a href="https://play.google.com/store/apps/details?id=com.thebosokacompany.skylinebowling&hl" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-						<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://apps.apple.com/us/app/skyline-bowling/id6450975412" target="_blank" rel="noopener noreferrer" aria-label="Apple Store" title="Apple Store">
-						<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=cqfKsAdOkiU" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-						<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
+					<div class="job-main">
+						<ul class="job-points"><li>Contributed to high-performing mobile titles by adding gameplay features and refining established systems.</li><li>Integrated and updated SDKs for analytics, ads, IAPs and internal tooling.</li><li>Prepared iOS and Android builds, investigated release issues and shipped regular store updates.</li><li>Configured A/B tests and used analytics to improve KPIs across live titles, alongside build-size and runtime performance work.</li></ul>
+						<ul class="tech" aria-label="Technologies"><li>Unity</li><li>C#</li><li>Git</li><li>Internal SDK</li><li>Firebase</li><li>GameAnalytics</li><li>IAPs / Ads</li><li>A/B Testing</li><li class="is-wide">Notion</li><li class="is-wide">AI-assisted Development</li></ul>
 					</div>
-				
-				</div> 
-				
-				<div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-derailed.png" alt="Derailed: Survival Adventure gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Derailed: Survival Adventure</h4>		      
-					      <p style="text-align: justify;">A hybrid-casual survival adventure where players drive a train through dangerous landscapes, gather resources, recruit a crew and make decisions along the way.
-						  <br><br>I focused on performance work, build-size reduction, bug fixing, SDK integrations, new gameplay features and A/B test support.</p>
-					   </div>
-
-			         <div class="link-box">
-						<a href="https://play.google.com/store/apps/details?id=com.train.journey&hl" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-						<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://derailed-survival-adventure.en.softonic.com/iphone/download" target="_blank" rel="noopener noreferrer" aria-label="iOS Download (Softonic)" title="iOS Download (Softonic)">
-						<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=zywb5IVmHns" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-						<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
+				</li>
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">May 2020 – Jun 2025</p>
+						<h3 class="job-org">Kwalee</h3>
+						<p class="job-role">Mid-Level Game Programmer</p>
 					</div>
-				
-				</div> 
-				
-				<div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-oildigging.png" alt="Oil Digging 3D gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Oil Digging 3D</h4>		      
-					      <p style="text-align: justify;">A hybrid-casual game about building and running an oil operation, from drilling the first well to creating a pipeline network for transport.
-						  <br><br>I contributed from prototype to release on one of the company's early hybrid-casual projects, implementing core systems such as machines, resource collection, delivery logic and the in-game shop.
-						  </p>
-					   </div>
-
-			         <div class="link-box">
-						<a href="https://www.crazygames.com/game/oil-digging" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-							<i class="fa fa-globe" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://oil-digging-3d.softonic.com/android" target="_blank" rel="noopener noreferrer" aria-label="iOS Download (Softonic)" title="iOS Download (Softonic)">
-							<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://youtu.be/O7YXtA7YHKE?t=3" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-							<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-					</div>      
-
-				   </div> 
-
-
-	            <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-drawersort.png" alt="Drawer Sort gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Drawer Sort</h4>		      
-					      <p style="text-align: justify;">A hybrid-casual puzzle game where players organise messy drawers with precision and a bit of planning.
-						  <br><br>I worked across the full development cycle, from prototype to release. My work included gameplay logic, UI flows, level creation tools for designers and the hint system.
-						  </p>
-					   </div>
-
-						<div class="link-box">
-							<a href="#" class="is-disabled" aria-label="Android Store unavailable" title="Android Store unavailable">
-								<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							
-							<a href="https://drawer-sort.updatestar.com/download" target="_blank" rel="noopener noreferrer" aria-label="iOS Download (UpdateStar)" title="iOS Download (UpdateStar)">
-								<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-
-							<a href="https://youtu.be/pxjn0DSt5U4" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-								<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
+					<div class="job-main">
+						<ul class="job-points"><li>Developed and shipped mobile games from prototype to release across new and existing titles.</li><li>Maintained live titles through gameplay updates, bug fixes, SDK integrations and iOS/Android releases.</li><li>Collaborated with design, art, production and product teams across prototype, production and LiveOps.</li><li>Improved performance and build size, using analytics and A/B testing to support KPI improvements.</li></ul>
+						<ul class="tech" aria-label="Technologies"><li>Unity</li><li>C#</li><li>Git</li><li>Internal SDK</li><li>Firebase</li><li>Jenkins</li><li>GameAnalytics</li><li>IAPs / Ads</li><li>A/B Testing</li><li>Jira</li></ul>
 					</div>
-
-				   </div> 
-
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-towersmash.png" alt="Tower Smash gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Tower Smash</h4>		      
-					      <p style="text-align: justify;">A hybrid-casual game about aiming, shooting and bringing down colourful tower structures with satisfying destruction.
-						  <br><br>I researched and implemented new mechanics so designers could test fresh ideas and expand the gameplay loop.</p>
-					   </div>
-
-			        <div class="link-box">
-						<a href="https://tower-smash.en.softonic.com/android/download" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-								<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-
-						<a href="#" class="is-disabled" aria-label="iOS Store unavailable" title="iOS Store unavailable">
-							<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-
-						<a href="https://www.youtube.com/watch?v=P1CYDlw2K5o" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-							<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
+				</li>
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">Jun. 2018 – Apr. 2019</p>
+						<h3 class="job-org">Super Awesome Hyper Dimensional Team</h3>
+						<p class="job-role">Junior Game Programmer</p>
 					</div>
+					<div class="job-main">
+						<ul class="job-points"><li>Built a playable prototype and presented it to 500+ attendees at Indie Summit Valencia.</li><li>Implemented gameplay mechanics, scene flow and multi-platform support.</li><li>Iterated on feedback from players and judges during the showcase.</li></ul>
+						<ul class="tech" aria-label="Technologies"><li>Unity</li><li>C#</li><li>Git</li><li>Spine 2D</li></ul>
+					</div>
+				</li>
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">Mar. 2018 – Jun. 2018</p>
+						<h3 class="job-org">Iction</h3>
+						<p class="job-role">Junior Game Programmer</p>
+					</div>
+					<div class="job-main">
+						<ul class="job-points"><li>Implemented gameplay features and fixed technical issues across Unity projects.</li><li>Helped with production tasks, project setup and day-to-day development support.</li></ul>
+						<ul class="tech" aria-label="Technologies"><li>Unity</li><li>C#</li><li class="is-wide">Git</li></ul>
+					</div>
+				</li>
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">Jan. 2017 – Dec. 2017</p>
+						<h3 class="job-org">Infinite Games Studios</h3>
+						<p class="job-role">Junior Game Programmer</p>
+					</div>
+					<div class="job-main">
+						<ul class="job-points"><li>Implemented gameplay features and supporting systems in Unity.</li><li>Worked on bug fixing, performance improvements and general project stability.</li></ul>
+						<ul class="tech" aria-label="Technologies"><li>Unity</li><li>C#</li><li class="is-wide">Git</li></ul>
+					</div>
+				</li>
+				</ol>
+				</div>
+		</section>
 
-				   </div> 
+		<section id="education" class="section section-edu">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 class="section-title" data-reveal>Education</h2>
+				</div>
+				<ol class="jobs">
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">2016 – 2017</p>
+						<h3 class="job-org">Teesside University</h3>
+						<p class="job-role">BSc (Hons) Computer Games Programming</p>
+					</div>
+					<div class="job-main">
+						<div class="grade"><div class="grade-top"><strong>70%</strong><span>First-Class Honours</span></div><div class="grade-bar"><i style="--w:70%"></i></div></div>
+						<ul class="tech tech--wide" aria-label="Subjects"><li>Advanced Game Development</li><li>Artificial Intelligence for Video Games</li><li>Computing Projects</li><li>Mobile Game Programming</li><li>Multiplayer and Social Games</li></ul>
+					</div>
+				</li>
+				<li class="job" data-reveal>
+					<span class="job-node" aria-hidden="true"></span>
+					<div class="job-side">
+						<p class="job-dates">2013 – 2016</p>
+						<h3 class="job-org">ESAT</h3>
+						<p class="job-role">HND in Video Games Programming</p>
+					</div>
+					<div class="job-main">
+						<div class="grade"><div class="grade-top"><strong>60%</strong><span>Second-Class Honours</span></div><div class="grade-bar"><i style="--w:60%"></i></div></div>
+						<ul class="tech tech--wide" aria-label="Subjects"><li>Advanced Programming</li><li>Artificial Intelligence for Video Games</li><li>Computer Architecture</li><li>Databases</li><li>Graphics Engine Programming</li><li>High-Level Programming</li><li>Low-Level Programming</li><li>Mobile Game Programming</li><li>Network Programming</li><li>Operating Systems</li><li>Sound Production and Editing</li><li>Video Game Design</li><li>Video Game Physics</li><li>Web Programming</li></ul>
+					</div>
+				</li>
+				</ol>
+			</div>
+		</section>
 
-					<div id="modal-06" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-helixjump.png" alt="Helix Jump gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Helix Jump</h4>		      
-					      <p style="text-align: justify;">A widely played hyper-casual live game where players rotate a helix tower to guide a bouncing ball through gaps while avoiding obstacles.
-						  <br><br>I implemented and maintained gameplay features, handled SDK integrations, supported live updates and A/B tests, fixed bugs and worked on stability, performance and build-size improvements.
-						  </p>
-					   </div>
-						<div class="link-box">
-						<a href="https://play.google.com/store/apps/details?id=com.h8games.helixjump" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-							<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://apps.apple.com/us/app/helix-jump/id1345968745" target="_blank" rel="noopener noreferrer" aria-label="Apple Store" title="Apple Store">
-							<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/shorts/OszzARsjnW4" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-							<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-
+		<section id="about" class="section section-about">
+			<div class="wrap">
+				<div class="about-top">
+					<figure class="about-figure" data-reveal>
+						<img class="about-photo" src="images/profile-pic.jpeg" width="800" height="800" loading="lazy" decoding="async" alt="Javier Pastor Serrano">
+					</figure>
+					<div class="about-copy">
+						<h2 class="section-title" data-reveal>About</h2>
+						<p class="about-text" data-reveal>I am a programmer with a background in game development and experience building products from early prototypes to polished releases. I enjoy creating reliable systems, useful tools and thoughtful user-facing features in fast-moving teams.</p>
+						<div class="about-links" data-reveal>
+							<a class="btn btn-line" href="cv/Javier_Pastor_Serrano_CV_V9.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-text-o" aria-hidden="true"></i>CV</a>
+							<a class="btn btn-line" href="https://www.linkedin.com/in/javierpastorserrano/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+							<a class="btn btn-line" href="https://github.com/japthor" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
 						</div>
-
-				   </div>
-				   
-				   <div id="modal-07" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-sharpshooterblitz.png" alt="Sharpshooter Blitz gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Sharpshooter Blitz</h4>		      
-					      <p style="text-align: justify;">A hyper-casual shooter built around quick reflexes, simple tap controls and short challenge-based levels.
-						  <br><br>I worked on bug fixing, performance improvements, new gameplay features and SDK integrations to keep the project stable and compatible.
-						  </p>
-					   </div>
-						<div class="link-box">
-							<a href="https://play.google.com/store/apps/details?id=com.igutso.killphil&hl" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-								<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							<a href="https://apps.apple.com/us/app/sharpshooter-blitz/id1504815328" target="_blank" rel="noopener noreferrer" aria-label="Apple Store" title="Apple Store">
-								<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							<a href="https://www.youtube.com/shorts/5pOvAg3rByA" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-								<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-						</div>
-
-				   </div>
-				   
-				   <div id="modal-08" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-baseballboy.png" alt="Baseball Boy gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Baseball Boy</h4>		      
-					      <p style="text-align: justify;">A widely played hyper-casual live game where players hit balls, earn coins and upgrade their stats to push their distance further.
-						  <br><br>I fixed bugs, improved stability, optimised performance, reduced build size, maintained gameplay features, updated SDK integrations and helped track A/B tests for product improvements.
-						  </p>
-					   </div>
-						<div class="link-box">
-							<a href="https://play.google.com/store/apps/details?id=com.itchmedia.ta3&hl" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-								<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							<a href="https://apps.apple.com/us/app/baseball-boy/id1333523965" target="_blank" rel="noopener noreferrer" aria-label="Apple Store" title="Apple Store">
-								<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							<a href="https://www.youtube.com/shorts/v4PwGFSKloU?feature=share" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-								<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-						</div>
-
-				   </div>
-
-
-				   <div id="modal-09" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-hospitalsimulator.png" alt="Hospital Simulator 3D gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Hospital Simulator 3D</h4>		      
-					      <p style="text-align: justify;">A hybrid-casual management game where players run and expand a hospital, balancing patient flow, machines and upgrades.
-						  <br><br>I worked from prototype to final product, implementing core gameplay logic for hospital machines, AI behaviours, progression systems and the in-game shop.
-						  </p>
-					   </div>
-						<div class="link-box">
-							<a href="https://hospital-simulator-3d.en.softonic.com/android" target="_blank" rel="noopener noreferrer" aria-label="Android Download (Softonic)" title="Android Download (Softonic)">
-								<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							<a href="https://hospital-simulator-3d.en.softonic.com/iphone" target="_blank" rel="noopener noreferrer" aria-label="iOS Download (Softonic)" title="iOS Download (Softonic)">
-								<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-							<a href="https://www.youtube.com/watch?v=bmDv-sq9f2A" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-								<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-							</a>
-						</div>
-
-				   </div>
-				   
-				   <div id="modal-10" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-wheelrace.png" alt="Wheel Race gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Wheel Race</h4>		      
-					      <p style="text-align: justify;">A hyper-casual racing game built around quick rounds, upgrades and increasingly difficult tracks.
-						  <br><br>I contributed from prototype into production, implementing gameplay systems and UI features including battles and level progression.</p>
-					   </div>
-
-			        <div class="link-box">
-						<a href="https://play.google.com/store/apps/details?id=com.syubestgames.wheelrace" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-							<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="#" class="is-disabled" aria-label="Apple Store unavailable" title="Apple Store unavailable">
-							<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=VgPyuQDo0Eg" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-							<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
 					</div>
-				   </div>
+				</div>
+				<dl class="skill-rows" data-reveal>
+					<div class="skill-row"><dt>Skills</dt><dd><ul class="cells"><li style="--i:0"><i class="fa fa-cube" aria-hidden="true"></i>Unity Engine</li><li style="--i:1"><i class="fa fa-code" aria-hidden="true"></i>C#</li><li style="--i:2"><i class="fa fa-sitemap" aria-hidden="true"></i>OOP</li><li style="--i:3"><i class="fa fa-tachometer" aria-hidden="true"></i>Optimisation</li><li style="--i:4"><i class="fa fa-cubes" aria-hidden="true"></i>Code Architecture</li><li style="--i:5"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>Design Patterns</li><li style="--i:6"><i class="fa fa-flask" aria-hidden="true"></i>A/B Testing</li><li style="--i:7"><i class="fa fa-bar-chart" aria-hidden="true"></i>Analytics</li><li style="--i:8"><i class="fa fa-refresh" aria-hidden="true"></i>Live Operations</li><li style="--i:9"><i class="fa fa-plug" aria-hidden="true"></i>SDK Integrations</li><li style="--i:10"><i class="fa fa-mobile" aria-hidden="true"></i>iOS / Android</li><li style="--i:11"><i class="fa fa-code-fork" aria-hidden="true"></i>Git / Version Control</li><li style="--i:12"><i class="fa fa-gamepad" aria-hidden="true"></i>Gameplay / UI Systems</li><li style="--i:13"><i class="fa fa-cube" aria-hidden="true"></i>Unreal Engine</li><li style="--i:14"><i class="fa fa-code" aria-hidden="true"></i>C++</li><li style="--i:15"><i class="fa fa-bug" aria-hidden="true"></i>Debugging</li><li style="--i:16"><i class="fa fa-line-chart" aria-hidden="true"></i>Profiling</li><li style="--i:17"><i class="fa fa-check-square-o" aria-hidden="true"></i>Testing</li><li style="--i:18"><i class="fa fa-rocket" aria-hidden="true"></i>Build &amp; Release</li><li style="--i:19"><i class="fa fa-wrench" aria-hidden="true"></i>Tools</li><li style="--i:20"><i class="fa fa-sliders" aria-hidden="true"></i>DOTween</li><li style="--i:21"><i class="fa fa-tasks" aria-hidden="true"></i>Jira</li><li style="--i:22"><i class="fa fa-file-text-o" aria-hidden="true"></i>Notion</li><li style="--i:23"><i class="fa fa-share-alt" aria-hidden="true"></i>UML</li><li style="--i:24"><i class="fa fa-paint-brush" aria-hidden="true"></i>Shaders (Basic)</li><li style="--i:25"><i class="fa fa-magic" aria-hidden="true"></i>AI-assisted Development</li><li style="--i:26"><i class="fa fa-hdd-o" aria-hidden="true"></i>Server-side Support</li></ul></dd></div>
+					<div class="skill-row"><dt>Soft skills</dt><dd><ul class="cells"><li style="--i:0"><i class="fa fa-users" aria-hidden="true"></i>Collaboration</li><li style="--i:1"><i class="fa fa-comments-o" aria-hidden="true"></i>Communication</li><li style="--i:2"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Problem Solving</li><li style="--i:3"><i class="fa fa-random" aria-hidden="true"></i>Adaptability</li><li style="--i:4"><i class="fa fa-clock-o" aria-hidden="true"></i>Task Estimation</li><li style="--i:5"><i class="fa fa-repeat" aria-hidden="true"></i>Agile Workflow</li><li style="--i:6"><i class="fa fa-flag" aria-hidden="true"></i>Ownership</li><li style="--i:7"><i class="fa fa-eye" aria-hidden="true"></i>Attention to Detail</li></ul></dd></div>
+					<div class="skill-row"><dt>Languages</dt><dd><ul class="cells"><li style="--i:0"><i class="fa fa-globe" aria-hidden="true"></i>English – Professional</li><li style="--i:1"><i class="fa fa-globe" aria-hidden="true"></i>Spanish – Native</li></ul></dd></div>
+				</dl>
+			</div>
+		</section>
 
+		<section id="contact" class="section section-contact">
+			<div class="wrap">
+				<div class="contact-card">
+					<h2 class="contact-title" data-reveal>Let&rsquo;s talk!</h2>
+					<p class="contact-lead" data-reveal>If my experience looks like a good fit for your team, feel free to get in touch. I am open to programming roles where I can keep building and growing.</p>
+					<div class="contact-actions" data-reveal>
+						<a class="btn btn-red contact-mail" href="mailto:javierpastorserrano@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>javierpastorserrano@gmail.com</a>
+						<button type="button" class="btn btn-ghost phone-btn" data-p="KzM0IDY0OSAwMTYgMzM1"><i class="fa fa-phone" aria-hidden="true"></i><span>Show phone</span></button>
+						<a class="btn btn-ghost" href="https://www.linkedin.com/in/javierpastorserrano/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+						<button type="button" class="btn btn-ghost ref-btn" data-mail="javierpastorserrano@gmail.com"><i class="fa fa-users" aria-hidden="true"></i><span aria-live="polite">References</span></button>
+					</div>
+					<div class="contact-meta" data-reveal><div><small>Based in</small><b><i class="fa fa-map-marker" aria-hidden="true"></i>Seville, Spain</b></div><div><small>Status</small><b><span class="pixel" aria-hidden="true"></span>Open to new roles</b></div></div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-				   <div id="modal-11" class="popup-modal slider mfp-hide">	
+	<footer class="site-footer">
+		<div class="wrap footer-inner">
+			<p>&copy; 2026 Javier Pastor Serrano</p>
+			<a href="#top">Back to top</a>
+		</div>
+	</footer>
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-cardealer.png" alt="Car Dealer 3D gameplay screenshot" />
-				     	</div>      	
+	<dialog id="dlg-monopoly-go" class="dlg" aria-labelledby="dlg-monopoly-go-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-monopolygo.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Monopoly GO! screenshot">
+				<figcaption class="dlg-count">Project 01 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-monopoly-go-t">Monopoly GO!</h3>
+				<div class="dlg-text"><p>Monopoly GO! is a large-scale live mobile game played by millions, reimagining the classic board game as a fast-paced social experience built around events, collection, progression and regular updates.</p><p>I contribute to Friends-related social systems and player-facing features such as Community Chest, as well as internal tools, while supporting A/B testing, KPI-driven improvements, bug fixing and selected server-side tasks.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.scopely.monopolygo" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://apps.apple.com/us/app/monopoly-go/id1621328561" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a><a class="chip-link" href="https://www.youtube.com/watch?v=cwfoZy3mNTI" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-a-dose-of-you" aria-label="Previous project: A Dose Of You"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-skyline-bowling" aria-label="Next project: Skyline Bowling"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-skyline-bowling" class="dlg" aria-labelledby="dlg-skyline-bowling-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-skylinebowling.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Skyline Bowling screenshot">
+				<figcaption class="dlg-count">Project 02 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-skyline-bowling-t">Skyline Bowling</h3>
+				<div class="dlg-text"><p>A hybrid-casual bowling game built around quick sessions, simple drag controls and satisfying physics.</p><p>I worked on live updates, gameplay changes, SDK integrations, bug fixing, performance optimisation and build-size reduction. I also helped set up and track A/B tests for KPI-driven product iterations.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.thebosokacompany.skylinebowling&amp;hl" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://apps.apple.com/us/app/skyline-bowling/id6450975412" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a><a class="chip-link" href="https://www.youtube.com/watch?v=cqfKsAdOkiU" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-monopoly-go" aria-label="Previous project: Monopoly GO!"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-derailed-survival-adventure" aria-label="Next project: Derailed: Survival Adventure"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-derailed-survival-adventure" class="dlg" aria-labelledby="dlg-derailed-survival-adventure-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-derailed.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Derailed: Survival Adventure screenshot">
+				<figcaption class="dlg-count">Project 03 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-derailed-survival-adventure-t">Derailed: Survival Adventure</h3>
+				<div class="dlg-text"><p>A hybrid-casual survival adventure where players drive a train through dangerous landscapes, gather resources, recruit a crew and make decisions along the way.</p><p>I focused on performance work, build-size reduction, bug fixing, SDK integrations, new gameplay features and A/B test support.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.train.journey&amp;hl" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://derailed-survival-adventure.en.softonic.com/iphone/download" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>iOS</a><a class="chip-link" href="https://www.youtube.com/watch?v=zywb5IVmHns" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-skyline-bowling" aria-label="Previous project: Skyline Bowling"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-helix-jump" aria-label="Next project: Helix Jump"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-helix-jump" class="dlg" aria-labelledby="dlg-helix-jump-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-helixjump.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Helix Jump screenshot">
+				<figcaption class="dlg-count">Project 04 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-helix-jump-t">Helix Jump</h3>
+				<div class="dlg-text"><p>A widely played hyper-casual live game where players rotate a helix tower to guide a bouncing ball through gaps while avoiding obstacles.</p><p>I implemented and maintained gameplay features, handled SDK integrations, supported live updates and A/B tests, fixed bugs and worked on stability, performance and build-size improvements.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.h8games.helixjump" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://apps.apple.com/us/app/helix-jump/id1345968745" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a><a class="chip-link" href="https://www.youtube.com/shorts/OszzARsjnW4" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-derailed-survival-adventure" aria-label="Previous project: Derailed: Survival Adventure"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-sharpshooter-blitz" aria-label="Next project: Sharpshooter Blitz"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-sharpshooter-blitz" class="dlg" aria-labelledby="dlg-sharpshooter-blitz-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-sharpshooterblitz.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Sharpshooter Blitz screenshot">
+				<figcaption class="dlg-count">Project 05 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-sharpshooter-blitz-t">Sharpshooter Blitz</h3>
+				<div class="dlg-text"><p>A hyper-casual shooter built around quick reflexes, simple tap controls and short challenge-based levels.</p><p>I worked on bug fixing, performance improvements, new gameplay features and SDK integrations to keep the project stable and compatible.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.igutso.killphil&amp;hl" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://apps.apple.com/us/app/sharpshooter-blitz/id1504815328" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a><a class="chip-link" href="https://www.youtube.com/shorts/5pOvAg3rByA" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-helix-jump" aria-label="Previous project: Helix Jump"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-baseball-boy" aria-label="Next project: Baseball Boy"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-baseball-boy" class="dlg" aria-labelledby="dlg-baseball-boy-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-baseballboy.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Baseball Boy screenshot">
+				<figcaption class="dlg-count">Project 06 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-baseball-boy-t">Baseball Boy</h3>
+				<div class="dlg-text"><p>A widely played hyper-casual live game where players hit balls, earn coins and upgrade their stats to push their distance further.</p><p>I fixed bugs, improved stability, optimised performance, reduced build size, maintained gameplay features, updated SDK integrations and helped track A/B tests for product improvements.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.itchmedia.ta3&amp;hl" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://apps.apple.com/us/app/baseball-boy/id1333523965" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a><a class="chip-link" href="https://www.youtube.com/shorts/v4PwGFSKloU?feature=share" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-sharpshooter-blitz" aria-label="Previous project: Sharpshooter Blitz"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-oil-digging-3d" aria-label="Next project: Oil Digging 3D"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-oil-digging-3d" class="dlg" aria-labelledby="dlg-oil-digging-3d-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-oildigging.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Oil Digging 3D screenshot">
+				<figcaption class="dlg-count">Project 07 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-oil-digging-3d-t">Oil Digging 3D</h3>
+				<div class="dlg-text"><p>A hybrid-casual game about building and running an oil operation, from drilling the first well to creating a pipeline network for transport.</p><p>I contributed from prototype to release on one of the company&#x27;s early hybrid-casual projects, implementing core systems such as machines, resource collection, delivery logic and the in-game shop.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://www.crazygames.com/game/oil-digging" target="_blank" rel="noopener noreferrer"><i class="fa fa-gamepad" aria-hidden="true"></i>Play online</a><a class="chip-link" href="https://oil-digging-3d.softonic.com/android" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Android</a><a class="chip-link" href="https://youtu.be/O7YXtA7YHKE?t=3" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-baseball-boy" aria-label="Previous project: Baseball Boy"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-drawer-sort" aria-label="Next project: Drawer Sort"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-drawer-sort" class="dlg" aria-labelledby="dlg-drawer-sort-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-drawersort.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Drawer Sort screenshot">
+				<figcaption class="dlg-count">Project 08 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-drawer-sort-t">Drawer Sort</h3>
+				<div class="dlg-text"><p>A hybrid-casual puzzle game where players organise messy drawers with precision and a bit of planning.</p><p>I worked across the full development cycle, from prototype to release. My work included gameplay logic, UI flows, level creation tools for designers and the hint system.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://drawer-sort.updatestar.com/download" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>iOS</a><a class="chip-link" href="https://youtu.be/pxjn0DSt5U4" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-oil-digging-3d" aria-label="Previous project: Oil Digging 3D"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-tower-smash" aria-label="Next project: Tower Smash"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-tower-smash" class="dlg" aria-labelledby="dlg-tower-smash-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-towersmash.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Tower Smash screenshot">
+				<figcaption class="dlg-count">Project 09 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-tower-smash-t">Tower Smash</h3>
+				<div class="dlg-text"><p>A hybrid-casual game about aiming, shooting and bringing down colourful tower structures with satisfying destruction.</p><p>I researched and implemented new mechanics so designers could test fresh ideas and expand the gameplay loop.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://tower-smash.en.softonic.com/android/download" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Android</a><a class="chip-link" href="https://www.youtube.com/watch?v=P1CYDlw2K5o" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-drawer-sort" aria-label="Previous project: Drawer Sort"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-hospital-simulator-3d" aria-label="Next project: Hospital Simulator 3D"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-hospital-simulator-3d" class="dlg" aria-labelledby="dlg-hospital-simulator-3d-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-hospitalsimulator.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Hospital Simulator 3D screenshot">
+				<figcaption class="dlg-count">Project 10 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-hospital-simulator-3d-t">Hospital Simulator 3D</h3>
+				<div class="dlg-text"><p>A hybrid-casual management game where players run and expand a hospital, balancing patient flow, machines and upgrades.</p><p>I worked from prototype to final product, implementing core gameplay logic for hospital machines, AI behaviours, progression systems and the in-game shop.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://hospital-simulator-3d.en.softonic.com/android" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Android</a><a class="chip-link" href="https://hospital-simulator-3d.en.softonic.com/iphone" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>iOS</a><a class="chip-link" href="https://www.youtube.com/watch?v=bmDv-sq9f2A" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-tower-smash" aria-label="Previous project: Tower Smash"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-wheel-race" aria-label="Next project: Wheel Race"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-wheel-race" class="dlg" aria-labelledby="dlg-wheel-race-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-wheelrace.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Wheel Race screenshot">
+				<figcaption class="dlg-count">Project 11 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-wheel-race-t">Wheel Race</h3>
+				<div class="dlg-text"><p>A hyper-casual racing game built around quick rounds, upgrades and increasingly difficult tracks.</p><p>I contributed from prototype into production, implementing gameplay systems and UI features including battles and level progression.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.syubestgames.wheelrace" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://www.youtube.com/watch?v=VgPyuQDo0Eg" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-hospital-simulator-3d" aria-label="Previous project: Hospital Simulator 3D"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-car-dealer-3d" aria-label="Next project: Car Dealer 3D"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-car-dealer-3d" class="dlg" aria-labelledby="dlg-car-dealer-3d-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-cardealer.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Car Dealer 3D screenshot">
+				<figcaption class="dlg-count">Project 12 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-car-dealer-3d-t">Car Dealer 3D</h3>
+				<div class="dlg-text"><p>A hyper-casual game about buying, assessing and selling used vehicles while growing a dealership.</p><p>I contributed to several mini-games and upgrade flows, including car parking and space upgrades, with a focus on bug fixing, gameplay improvements and UI polish.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://car-dealer-3d.en.softonic.com/android/download" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Android</a><a class="chip-link" href="https://car-dealer-3d.en.softonic.com/iphone" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>iOS</a><a class="chip-link" href="https://www.youtube.com/shorts/Jy9QTOk4wVo" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-wheel-race" aria-label="Previous project: Wheel Race"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-build-it-3d" aria-label="Next project: Build It 3D"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-build-it-3d" class="dlg" aria-labelledby="dlg-build-it-3d-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-buildit.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Build It 3D screenshot">
+				<figcaption class="dlg-count">Project 13 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-build-it-3d-t">Build It 3D</h3>
+				<div class="dlg-text"><p>A hyper-casual construction game made of short building and demolition challenges.</p><p>I developed mini-games such as the crane roof-placement challenge, and contributed to other mechanics including the wrecking ball and bulldozer sections.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://play.google.com/store/apps/details?id=com.kwalee.citybuilder" target="_blank" rel="noopener noreferrer"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a><a class="chip-link" href="https://apps.apple.com/eg/app/build-it-3d/id1543882565" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a><a class="chip-link" href="https://www.youtube.com/watch?v=5LHNRrisKuA" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-car-dealer-3d" aria-label="Previous project: Car Dealer 3D"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-a-dose-of-you" aria-label="Next project: A Dose Of You"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog id="dlg-a-dose-of-you" class="dlg" aria-labelledby="dlg-a-dose-of-you-t">
+		<div class="dlg-panel">
+			<button type="button" class="dlg-close" data-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<figure class="dlg-media">
+				<img src="images/portfolio/modals/m-adoseofyou.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="A Dose Of You screenshot">
+				<figcaption class="dlg-count">Project 14 / 14</figcaption>
+			</figure>
+			<div class="dlg-body">
+				<h3 id="dlg-a-dose-of-you-t">A Dose Of You</h3>
+				<div class="dlg-text"><p>A narrative-driven game with card-based combat, set in a fantasy world where the player investigates a crime.</p><p>I contributed to the demo shown at Valencia Indie Summit 2019. My work included the map, scene events, the pairs mini-game, find-object UI, dialogue scripting and bug fixing.</p></div>
+			</div>
+			<div class="dlg-foot">
+				<div class="dlg-links"><a class="chip-link" href="https://x.com/i/status/1126528117252796423" target="_blank" rel="noopener noreferrer"><i class="fa fa-play" aria-hidden="true"></i>Video</a></div>
+				<div class="dlg-nav">
+					<button type="button" class="dlg-step" data-step="dlg-build-it-3d" aria-label="Previous project: Build It 3D"><i class="arrow arrow--left"></i><span>Prev</span></button>
+					<button type="button" class="dlg-step" data-step="dlg-monopoly-go" aria-label="Next project: Monopoly GO!"><span>Next</span><i class="arrow"></i></button>
+				</div>
+			</div>
+		</div>
+	</dialog>
 
-					   <div class="description-box">
-					      <h4>Car Dealer 3D</h4>		      
-					      <p style="text-align: justify;">A hyper-casual game about buying, assessing and selling used vehicles while growing a dealership.
-						  <br><br>I contributed to several mini-games and upgrade flows, including car parking and space upgrades, with a focus on bug fixing, gameplay improvements and UI polish.
-						  </p>
-					   </div>
-
-			         <div class="link-box">
-						<a href="https://car-dealer-3d.en.softonic.com/android/download" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-							<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://car-dealer-3d.en.softonic.com/iphone" target="_blank" rel="noopener noreferrer" aria-label="iOS Download (Softonic)" title="iOS Download (Softonic)">
-							<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/shorts/Jy9QTOk4wVo" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-							<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-					</div>      
-
-				   </div> 
-
-				   <div id="modal-12" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-buildit.png" alt="Build It 3D gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Build It 3D</h4>		      
-					      <p style="text-align: justify;">A hyper-casual construction game made of short building and demolition challenges.
-						  <br><br>I developed mini-games such as the crane roof-placement challenge, and contributed to other mechanics including the wrecking ball and bulldozer sections.
-						  </p>
-					   </div>
-
-			         <div class="link-box">
-						<a href="https://play.google.com/store/apps/details?id=com.kwalee.citybuilder" target="_blank" rel="noopener noreferrer" aria-label="Android Store" title="Android Store">
-							<i class="fa fa-android" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://apps.apple.com/eg/app/build-it-3d/id1543882565" target="_blank" rel="noopener noreferrer" aria-label="Apple Store" title="Apple Store">
-							<i class="fa fa-apple" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=5LHNRrisKuA" target="_blank" rel="noopener noreferrer" aria-label="YouTube Video" title="YouTube Video">
-							<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-					</div>	      
-
-				   </div>
-
-				   <div id="modal-13" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-adoseofyou.png" alt="A Dose Of You gameplay screenshot" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>A Dose Of You</h4>		      
-					      <p style="text-align: justify;">A narrative-driven game with card-based combat, set in a fantasy world where the player investigates a crime.
-						  <br><br>I contributed to the demo shown at Valencia Indie Summit 2019. My work included the map, scene events, the pairs mini-game, find-object UI, dialogue scripting and bug fixing.
-						  </p>
-					   </div>
-
-			        <div class="link-box">
-						<a href="#" class="is-disabled" aria-label="Windows version unavailable" title="Windows version unavailable">
-								<i class="fa fa-windows" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="#" class="is-disabled" aria-label="YouTube video unavailable" title="YouTube video unavailable">
-								<i class="fa fa-youtube-play" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-						<a href="https://x.com/i/status/1126528117252796423" target="_blank" rel="noopener noreferrer" aria-label="Video" title="Video">
-							<i class="fa fa-twitter" style="font-size: 35px; vertical-align: middle;"></i>
-						</a>
-					</div>      
-
-				   </div>
-
-
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
-
-	
-   <!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Contact</h5>
-   			<h1>Let's talk.</h1>
-
-			<p class="lead">
-				If my experience looks like a good fit for your team, feel free to get in touch.<br>
-				I am open to programming roles where I can contribute to strong teams and polished products.
-			</p>
-
-   		</div> 
-   	</div> <!-- /section-intro -->
-
-<!-- Contact form (taken away)
-   	<div class="row contact-form">
-
-   		<div class="col-twelve">
-
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
-
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
-
-      			</fieldset>
-      		</form> 
-
-            <div id="message-warning">            	
-            </div>            
-
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
-
-         </div> 
-   		
-   	</div> -->
-
-	<!-- /contact-form -->
-
-   	<div class="row contact-info">
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
-
-   			<h5>Where to find me</h5>
-   			<p>Seville, Spain</p>
-
-   		</div>
-
-   		<div class="col-four tab-full collapse">
-
-   			<div class="icon">
-   				  <i class="icon-mail"></i>
-   			</div>
-
-   			<h5>Email Me At</h5>
-   			<p>javierpastorserrano@gmail.com</p>
-
-   		</div>
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
-
-   			<h5>Call Me At</h5>
-   			<p>(+34)649016335</p>
-
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-	</section> <!-- /contact -->
-
-
-   <!-- footer
-   ================================================== -->
-
-   <footer>
-     	<div class="row">
-
-      	<div class="col-eight tab-full">
-	      	
-			<div class="copyright">
-		        	<span>© 2026 Javier Pastor Serrano</span>
-		         </div>		                  
-	      	</div>
-
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
-
-      	</div> <!-- /row -->     	
-   </footer>  
-
-   <!--<div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-   -->
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
+	<script src="js/site.js" defer></script>
 </body>
-
 </html>
