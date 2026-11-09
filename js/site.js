@@ -16,7 +16,12 @@
 		root.style.setProperty("--p", max > 0 ? (window.scrollY / max).toFixed(4) : 0);  // top progress bar
 		jobLists.forEach(function (list) {  // timeline lines fill as you read down
 			var r = list.getBoundingClientRect();
-			list.style.setProperty("--tp", Math.min(1, Math.max(0, (window.innerHeight * 0.65 - r.top) / r.height)).toFixed(4));
+			var tp = Math.min(1, Math.max(0, (window.innerHeight * (window.innerWidth <= 860 ? 0.7 : 0.72) - r.top) / r.height));
+			list.style.setProperty("--tp", tp.toFixed(4));
+			var tip = 8 + tp * (r.height - 16);  // where the red line ends, in px from the top of the list
+			list.querySelectorAll(".job").forEach(function (job) {  // a node lights when the line reaches it
+				job.classList.toggle("is-lit", tp > 0 && tip >= job.getBoundingClientRect().top - r.top + 8);
+			});
 		});
 	}
 	function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
@@ -24,14 +29,19 @@
 	window.addEventListener("resize", onScroll);
 	update();
 
-	/* hero: red glow follows the pointer (mouse only) */
-	var hero = document.querySelector(".hero");
-	if (hero && !reduceMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-		hero.addEventListener("pointermove", function (e) {
-			var r = hero.getBoundingClientRect();
-			var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-			hero.style.setProperty("--mx", (x * 100).toFixed(1) + "%");
-			hero.style.setProperty("--my", (y * 100).toFixed(1) + "%");
+	/* hero + contact: red glow follows the pointer (mouse only) */
+	if (!reduceMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+		[".hero", ".section-contact"].forEach(function (sel) {
+			var box = document.querySelector(sel);
+			if (!box) return;
+			box.addEventListener("pointermove", function (e) {
+				var r = box.getBoundingClientRect();
+				var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+				box.style.setProperty("--mx", (x * 100).toFixed(1) + "%");
+				box.style.setProperty("--my", (y * 100).toFixed(1) + "%");
+				box.style.setProperty("--px", (x * 2 - 1).toFixed(3));
+				box.style.setProperty("--py", (y * 2 - 1).toFixed(3));
+			});
 		});
 	}
 
@@ -49,11 +59,15 @@
 
 	/* highlight the section in view */
 	var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
+	var spyLock = 0;
+	function setActive(id) { links.forEach(function (a) { a.classList.toggle("is-active", a.getAttribute("href") === "#" + id); }); }
+	/* a click lights its link at once; the scroll spy stays quiet until the jump has settled */
+	links.forEach(function (a) { a.addEventListener("click", function () { setActive(a.getAttribute("href").slice(1)); clearTimeout(spyLock); spyLock = setTimeout(function () { spyLock = 0; }, 900); }); });
 	if ("IntersectionObserver" in window) {
 		var spy = new IntersectionObserver(function (entries) {
 			entries.forEach(function (entry) {
-				if (!entry.isIntersecting) return;
-				links.forEach(function (a) { a.classList.toggle("is-active", a.getAttribute("href") === "#" + entry.target.id); });
+				if (!entry.isIntersecting || spyLock) return;
+				setActive(entry.target.id);
 			});
 		}, { rootMargin: "-45% 0px -50% 0px" });
 		links.forEach(function (a) { var s = document.querySelector(a.getAttribute("href")); if (s) spy.observe(s); });
@@ -69,7 +83,7 @@
 				entry.target.classList.add("is-visible");
 				revealer.unobserve(entry.target);
 			});
-		}, { rootMargin: "0px 0px -8% 0px" });
+		}, { rootMargin: "0px 0px 14% 0px" });
 		document.querySelectorAll("[data-reveal]").forEach(function (el) { revealer.observe(el); });
 	}
 
@@ -112,6 +126,11 @@
 		if (!dlg || typeof dlg.showModal !== "function") return;
 		lastTrigger = trigger || document.querySelector('[data-open="' + id + '"]');
 		dlg.showModal();
+		// grow from the card that was clicked; stepping between projects opens from the centre
+		if (trigger && !reduceMotion) {
+			var t = trigger.getBoundingClientRect(), d = dlg.getBoundingClientRect();
+			dlg.style.transformOrigin = (t.left + t.width / 2 - d.left) + "px " + (t.top + t.height / 2 - d.top) + "px";
+		} else dlg.style.transformOrigin = "";
 		document.body.style.overflow = "hidden";
 	}
 	function closeDialog(dlg) {
@@ -124,6 +143,11 @@
 		btn.addEventListener("click", function () {
 			openDialog(btn.getAttribute("data-open"), btn);
 		});
+		function warm() {  // fetch the dialog image as soon as the card is approached, so the dialog opens with it ready
+			var img = document.querySelector("#" + btn.getAttribute("data-open") + " .dlg-media img");
+			if (img) img.loading = "eager";
+		}
+		["pointerenter", "focus", "touchstart"].forEach(function (ev) { btn.addEventListener(ev, warm, { once: true, passive: true }); });
 	});
 	document.querySelectorAll("[data-step]").forEach(function (btn) {  // previous / next project
 		btn.addEventListener("click", function () {
@@ -132,6 +156,14 @@
 		});
 	});
 	document.querySelectorAll("dialog.dlg").forEach(function (dlg) {
+		var sx = 0, sy = 0;  // swipe left / right to step between projects (touch)
+		dlg.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+		dlg.addEventListener("touchend", function (e) {
+			var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+			if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+			var steps = dlg.querySelectorAll("[data-step]");  // [previous, next]
+			if (steps.length === 2) steps[dx < 0 ? 1 : 0].click();
+		}, { passive: true });
 		dlg.addEventListener("click", function (e) {
 			if (e.target === dlg || e.target.closest("[data-close]")) closeDialog(dlg);  // backdrop click or close button
 		});
@@ -142,4 +174,12 @@
 			if (lastTrigger) lastTrigger.focus({ preventScroll: true });
 		});
 	});
+	/* contact: local time in Seville */
+	var clock = document.querySelector(".local-time");
+	if (clock && window.Intl && Intl.DateTimeFormat) {
+		var fmt = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Madrid" });
+		var tick = function () { clock.textContent = fmt.format(new Date()); };
+		tick();
+		setInterval(tick, 30000);
+	}
 })();
