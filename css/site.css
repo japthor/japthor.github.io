@@ -724,3 +724,8 @@ a.dlg-org:hover .ico, a.dlg-org:focus-visible .ico { translate: 2px -2px; opacit
 @media (min-width: 601px) and (max-width: 760px) { .about-links { flex-wrap: nowrap; gap: 8px; } .about-links .btn { padding-inline: 14px; } }  /* CV, LinkedIn and GitHub stay on one row next to the photo */
 @media (max-width: 480px) { .about-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .about-links .btn { justify-content: center; padding-inline: 6px; } }  /* small phones: three equal buttons in one row, like the hero */
 @media (max-width: 360px) { .about-links .btn { font-size: .84rem; gap: 6px; } }
+
+/* phones with see-through or collapsing browser bars: the dark hero reaches the very bottom of the screen,
+   while its content and the scroll hint stay inside the part that is always visible */
+.hero { box-sizing: border-box; min-height: 100svh; min-height: 100lvh; padding-bottom: calc(100lvh - 100svh); }
+.scroll-hint { bottom: calc(24px + 100lvh - 100svh); }
