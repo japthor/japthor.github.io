@@ -634,11 +634,9 @@ a.dlg-org:hover .ico, a.dlg-org:focus-visible .ico { translate: 2px -2px; opacit
 .section-edu .job.is-lit :is(.job-role, .job-dates, .grade-top span) { color: #55555B; }
 .js-reveal .job:not(.is-lit) .job-org .org-link { background-image: linear-gradient(#84848B, #84848B); }
 
-/* mobile polish: contact meta text centred under its label, menu dot beside the active item, hero fills the visible screen, evener line breaks */
+/* mobile polish: contact meta text centred under its label, menu dot beside the active item, evener line breaks */
 /* cancel the trailing letter-spacing so the label is optically centred */
-.hero { min-height: 100svh; min-height: 100dvh; }
 @media (max-width: 860px) {
-	.hero { min-height: 100svh; min-height: 100dvh; }
 	.site-nav a:not(.nav-cv)::after { bottom: auto; top: 50%; }
 }
 @media (max-width: 560px) {
