@@ -125,12 +125,7 @@
 		var dlg = document.getElementById(id);
 		if (!dlg || typeof dlg.showModal !== "function") return;
 		lastTrigger = trigger || document.querySelector('[data-open="' + id + '"]');
-		dlg.showModal();
-		// grow from the card that was clicked; stepping between projects opens from the centre
-		if (trigger && !reduceMotion) {
-			var t = trigger.getBoundingClientRect(), d = dlg.getBoundingClientRect();
-			dlg.style.transformOrigin = (t.left + t.width / 2 - d.left) + "px " + (t.top + t.height / 2 - d.top) + "px";
-		} else dlg.style.transformOrigin = "";
+		dlg.showModal();  // modals open from the centre of the screen
 		document.body.style.overflow = "hidden";
 	}
 	function closeDialog(dlg) {
