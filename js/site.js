@@ -12,6 +12,7 @@
 	function update() {
 		ticking = false;
 		header.classList.toggle("is-scrolled", window.scrollY > 24);
+		if (spied) spyUpdate();
 		var max = root.scrollHeight - window.innerHeight;
 		root.style.setProperty("--p", max > 0 ? (window.scrollY / max).toFixed(4) : 0);  // top progress bar
 		jobLists.forEach(function (list) {  // timeline lines fill as you read down
@@ -62,16 +63,17 @@
 	var spyLock = 0;
 	function setActive(id) { links.forEach(function (a) { a.classList.toggle("is-active", a.getAttribute("href") === "#" + id); }); }
 	/* a click lights its link at once; the scroll spy stays quiet until the jump has settled */
-	links.forEach(function (a) { a.addEventListener("click", function () { setActive(a.getAttribute("href").slice(1)); clearTimeout(spyLock); spyLock = setTimeout(function () { spyLock = 0; }, 900); }); });
-	if ("IntersectionObserver" in window) {
-		var spy = new IntersectionObserver(function (entries) {
-			entries.forEach(function (entry) {
-				if (!entry.isIntersecting || spyLock) return;
-				setActive(entry.target.id);
-			});
-		}, { rootMargin: "-45% 0px -50% 0px" });
-		links.forEach(function (a) { var s = document.querySelector(a.getAttribute("href")); if (s) spy.observe(s); });
+	links.forEach(function (a) { a.addEventListener("click", function () { setActive(a.getAttribute("href").slice(1)); clearTimeout(spyLock); spyLock = setTimeout(function () { spyLock = 0; spyUpdate(); }, 900); }); });
+	/* scroll spy: the linked section that crosses 45% of the screen height is the current one (checked on every scroll frame, see update) */
+	var spied = links.map(function (a) { return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+	function spyUpdate() {
+		if (spyLock) return;
+		var line = window.innerHeight * 0.45, current = spied[0];
+		spied.forEach(function (sec) { if (sec.getBoundingClientRect().top <= line) current = sec; });  // last section that started above the line (Education counts as Experience)
+		if (window.innerHeight + window.scrollY >= root.scrollHeight - 2) current = spied[spied.length - 1];  // bottom of the page: Contact
+		setActive(current.id);
 	}
+	spyUpdate();
 
 	/* reveal cards and jobs once as they enter; stagger within a row */
 	if ("IntersectionObserver" in window && !reduceMotion) {
