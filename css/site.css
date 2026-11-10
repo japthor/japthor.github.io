@@ -806,7 +806,7 @@ a.dlg-org:hover .ico, a.dlg-org:focus-visible .ico { translate: 2px -2px; opacit
 	.site-nav a:not(.nav-cv)::after { left: auto; right: 0; bottom: auto; top: 50%; margin: -3px 0 0; }
 }
 @media (max-width: 560px) {
-	.hero-lede { max-width: none; text-wrap: balance; }
+	.hero-lede { max-width: none; }
 }
 
 /* contact meta: icon on top, then label, then value, all on one centre axis */
@@ -834,3 +834,59 @@ a.dlg-org:hover .ico, a.dlg-org:focus-visible .ico { translate: 2px -2px; opacit
 	.site-nav a:not(.nav-cv) { padding-left: 26px; }
 	.site-nav a:not(.nav-cv)::after { left: 2px; right: auto; margin: -5px 0 0 0; }
 }
+
+/* small screens: plain greedy wrapping, so lines fill the width instead of breaking early */
+@media (max-width: 860px) {
+	.hero-lede, .job-points li, .dlg-points li { text-wrap: wrap; }
+}
+
+/* tablets: Home stacks (centred collage) up to 980px, About keeps photo + text side by side from 601px */
+@media (min-width: 561px) and (max-width: 980px) {
+	.hero-inner { grid-template-columns: minmax(0, 1fr); gap: 40px; padding-top: 120px; padding-bottom: 72px; }
+	.hero-collage { width: min(100%, 560px); max-width: 560px; margin: 8px auto 40px; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	.hero-collage > :nth-child(5) { display: none; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+	.about-top { grid-template-columns: auto minmax(0, 1fr); gap: 40px; align-items: center; }
+	.about-figure { width: 220px; margin-right: 14px; }
+	.about-text { font-size: 1.15rem; }
+}
+@media (min-width: 561px) and (max-width: 980px) { .hero-collage { width: min(100%, 500px); max-width: 500px; } }
+
+/* About on mid-size windows: let the text use the whole column instead of balancing it into a narrow block */
+@media (min-width: 561px) and (max-width: 1100px) {
+	.about-text { max-width: none; text-wrap: wrap; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+	.about-top { gap: 32px; }
+	.about-figure { width: 200px; }
+}
+
+/* ===== uniform scaling between breakpoints (no size jumps when the window changes) ===== */
+/* hero: on one-column layouts the text block stops growing at 500px, so the name never gets bigger than on desktop */
+@media (max-width: 980px) { .hero-copy { max-width: 500px; } }
+@media (min-width: 561px) and (max-width: 980px) {
+	.hero-inner { max-width: calc(500px + 2 * var(--gutter)); margin-inline: auto; }
+	.hero-collage { width: 100%; max-width: 500px; }
+}
+/* work cards: two per row between 601 and 960px, titles grow with the card instead of jumping */
+@media (min-width: 601px) and (max-width: 960px) {
+	.card:not(.card--hero) .card-title { font-size: clamp(.95rem, .35rem + 1.6vw, 1.3rem); }
+}
+/* experience/education: company name capped on one-column layouts, wider left column on small desktops */
+@media (max-width: 860px) { .job-org { font-size: min(1.35rem, calc(100cqw / 17)); } }
+@media (min-width: 861px) and (max-width: 1100px) { .job { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 16px 40px; } }
+/* about photo: one smooth size from tablet to desktop */
+@media (min-width: 601px) { .about-figure { width: clamp(200px, 25vw, 280px); } }
+@media (min-width: 601px) and (max-width: 980px) { .hero-role { font-stretch: 100%; font-size: 5cqw; } }  /* same subtitle style as phones on every one-column hero */
+/* work: the Monopoly GO! card height follows the width smoothly (16:9 on phones, 21:9 on wide screens) */
+.card--hero .card-hit { aspect-ratio: auto; height: calc(54px + .369 * min(100vw, 1200px)); }
+/* hero buttons never leave one button alone on a second row on small desktops */
+@media (min-width: 981px) and (max-width: 1160px) {
+	.hero-ctas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; max-width: 460px; }
+	.hero-ctas .btn { justify-content: center; padding: 0 8px; }
+}
+@media (min-width: 561px) { .section:not(.section-edu) .tech { grid-template-columns: repeat(auto-fill, minmax(186px, 1fr)); } }  /* wide enough for the longest label (AI-assisted Development) */
+@media (min-width: 601px) and (max-width: 760px) { .about-links { flex-wrap: nowrap; gap: 8px; } .about-links .btn { padding-inline: 14px; } }  /* CV, LinkedIn and GitHub stay on one row next to the photo */
+@media (max-width: 480px) { .about-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .about-links .btn { justify-content: center; padding-inline: 6px; } }  /* small phones: three equal buttons in one row, like the hero */
+@media (max-width: 360px) { .about-links .btn { font-size: .84rem; gap: 6px; } }
